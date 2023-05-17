@@ -1,0 +1,85 @@
+digraph "spi" {
+/* Set options */
+graph [ rankdir=TB ];
+node [ fontsize=12  shape=box ];
+edge [ fontsize=12  ];
+
+
+
+/*       State Definitions       */
+
+s0 [label="0\n[CSNHigh]\n\nbitCount <= 8'b0\nramAddrReg <= 8'b0\nramCLKEnReg <= 1'b0\nramCLKReg <= 1'b0\nramWriteEnReg <= 1'b0\nreadMode <= 1'b0\nreadWord <= 16'hffff\nspiInWord <= 32'b0\n"];
+s1 [label="1\nCLKHigh\n\nramAddrReg <= spiInWord[8:1]\n"];
+s2 [label="2\nCLKLow\n\nspiInWord[0] <= mosiBuf\n"];
+s3 [label="3\nShift\n\nbitCount <= bitCount + 1'b1\nspiInWord <= spiInWord << 1\n"];
+s4 [label="4\nLatchBit\n\nreadMode <= (bitCount[7:0] == 8'h10 && spiInWord[16:9] == 8'h11) ? 1'b1 :  readMode\n"];
+s5 [label="5\nLastBit\n\nspiInWord[0] <= mosiBuf\n"];
+s6 [label="6\nCommand\n\n"];
+s7 [label="7\nWriteRam\n\nramCLKEnReg <= 1'b1\nramCLKReg <= 1'b0\nramWriteEnReg <= 1'b1\n"];
+s8 [label="8\nCSNLow\n\nramCLKEnReg <= 1'b0\nramCLKReg <= 1'b0\nramWriteEnReg <= 1'b0\n"];
+s9 [label="9\nWriteRamStore\n\nramCLKReg <= 1'b1\n"];
+s10 [label="10\nCLKHighRead\n\nbitCount <= 8'b0\nramCLKEnReg <= 1'b1\nramCLKReg <= 1'b0\n"];
+s11 [label="11\nLatchReadWord\n\nreadWord[15:0] <= ramReadData[15:0]\n"];
+s12 [label="12\nCLKLowRead\n\n"];
+s13 [label="13\nShiftRead\n\nbitCount <= bitCount + 1'b1\nreadWord <= readWord << 1\n"];
+s14 [label="14\nCLKHighReadLoop\n\n"];
+s15 [label="15\nReadRaiseCLK\n\nramCLKReg <= 1'b1\n"];
+s16 [label="16\nReadLowerCLK\n\nramCLKReg <= 1'b0\n"];
+s17 [label="17\nReadRaiseCLK2\n\nramCLKReg <= 1'b1\n"];
+s18 [label="18\nLastBitCLKHigh\n\n"];
+s19 [label="19\nLastBitCLKLow\n\n"];
+s20 [label="20\nWritePWMReg0\n\npwmRegs[15:0] <= spiInWord[15:0]\n"];
+s21 [label="21\nWritePWMReg1\n\npwmRegs[31:16] <= spiInWord[15:0]\n"];
+s22 [label="22\nWritePWMReg2\n\npwmRegs[47:32] <= spiInWord[15:0]\n"];
+
+
+
+/*       State Transitions       */
+
+s1 -> s10[label = "readMode == 1'b1"];
+s1 -> s2[label = "clkBuf == 1'b0 && readMode == 1'b0"];
+s1 -> s0[label = "csnBuf == 1'b1"];
+s1 -> s1[label = "clock"];
+s10 -> s15[label = "clock"];
+s14 -> s13[label = "clkBuf == 1'b0"];
+s14 -> s14[label = "clock"];
+s2 -> s0[label = "csnBuf == 1'b1"];
+s2 -> s3[label = "clkBuf == 1'b1"];
+s2 -> s2[label = "clock"];
+s12 -> s14[label = "clkBuf == 1'b1"];
+s12 -> s0[label = "csnBuf == 1'b1"];
+s12 -> s8[label = "bitCount[7:0] == 8'h10"];
+s12 -> s12[label = "clock"];
+s0 -> s1[label = "csnBuf == 1'b0"];
+s0 -> s0[label = "clock"];
+s8 -> s0[label = "csnBuf == 1'b1"];
+s8 -> s8[label = "clock"];
+s6 -> s0[label = "csnBuf == 1'b1 && spiInWord[31:24] != 8'h10"];
+s6 -> s8[label = "spiInWord[31:24] != 8'h10 && spiInWord[31:24] != 8'h11 && spiInWord[31:24] != 8'h12 && spiInWord[31:24] != 8'h13 && spiInWord[31:24] != 8'h14 && clkBuf == 1'b1"];
+s6 -> s20[label = "spiInWord[31:24] == 8'h12"];
+s6 -> s21[label = "spiInWord[31:24] == 8'h13"];
+s6 -> s22[label = "spiInWord[31:24] == 8'h14"];
+s6 -> s7[label = "spiInWord[31:24] == 8'h10"];
+s6 -> s6[label = "clock"];
+s5 -> s6[label = "clkBuf == 1'b0"];
+s5 -> s5[label = "clock"];
+s18 -> s19[label = "clkBuf == 1'b0"];
+s18 -> s18[label = "clock"];
+s19 -> s5[label = "clkBuf == 1'b1"];
+s19 -> s19[label = "clock"];
+s4 -> s18[label = "bitCount == 8'h1F"];
+s4 -> s1[label = "clock"];
+s11 -> s12[label = "clkBuf == 1'b0"];
+s11 -> s11[label = "clock"];
+s16 -> s17[label = "clock"];
+s15 -> s16[label = "clock"];
+s17 -> s11[label = "clock"];
+s3 -> s4[label = "clock"];
+s13 -> s12[label = "clock"];
+s20 -> s8[label = "clock"];
+s21 -> s8[label = "clock"];
+s22 -> s8[label = "clock"];
+s7 -> s9[label = "clock"];
+s9 -> s8[label = "clock"];
+
+}

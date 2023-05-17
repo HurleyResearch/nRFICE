@@ -1,0 +1,28 @@
+digraph "pwm" {
+/* Set options */
+graph [ rankdir=TB ];
+node [ fontsize=12  shape=box ];
+edge [ fontsize=12  ];
+
+
+
+/*       State Definitions       */
+
+s0 [label="0\n[Idle]\n\n"];
+s1 [label="1\nConfigure\n\n"];
+s2 [label="2\nConfigRam1\n\n"];
+s3 [label="3\nConfigRam2\n\n"];
+s4 [label="4\nConfigRam3\n\n"];
+
+
+
+/*       State Transitions       */
+
+s2 -> s3[label = "clock"];
+s3 -> s4[label = "clock"];
+s4 -> s0[label = "clock"];
+s1 -> s2[label = "clock"];
+s0 -> s1[label = "counter >= 16'hefff && ramSafe == 1'b1"];
+s0 -> s0[label = "clock"];
+
+}

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/logTextView"
+        android:layout_width="397dp"
+        android:layout_height="179dp"
+        android:scrollbars="vertical"
+        android:text="TextView"
+        android:textSize="8pt"
+        android:background="@drawable/rectangle_white_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="268dp"
+        android:layout_height="56dp"
+        android:background="@drawable/rectangle_white_border"
+        android:elevation="20dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logTextView" />
+
+    <Button
+        android:id="@+id/addProjectButton"
+        android:layout_width="245dp"
+        android:layout_height="61dp"
+        android:text="Add Project"
+        android:onClick="addProjectButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <Button
+        android:id="@+id/programFPGAFlashButton"
+        android:layout_width="207dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:onClick="programFPGAFlashButton"
+        android:text="Program FPGA Flash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addProjectButton" />
+
+    <Button
+        android:id="@+id/readVerifyFlashButton"
+        android:layout_width="237dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="12dp"
+        android:text="Read / Verify Flash"
+        android:onClick="readVerifyFlashButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/programFPGAFlashButton" />
+
+    <Button
+        android:id="@+id/resetIceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="resetICEButton"
+        android:text="Hard Reset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/readVerifyFlashButton" />
+
+    <Button
+        android:id="@+id/softResetICEButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Soft Reset"
+        android:onClick="softResetICEButton"
+        app:layout_constraintStart_toEndOf="@+id/resetIceButton"
+        app:layout_constraintTop_toBottomOf="@+id/readVerifyFlashButton" />
+
+    <Button
+        android:id="@+id/ramTestButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RamTest"
+
+        android:onClick="ramTestButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resetIceButton" />
+
+    <EditText
+        android:id="@+id/sumText"
+        android:layout_width="119dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Not downloaded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintStart_toEndOf="@+id/programFPGAFlashButton"
+        app:layout_constraintTop_toBottomOf="@+id/addProjectButton" />
+
+    <Button
+        android:id="@+id/longTestButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="longTestButton"
+
+        android:text="long test"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ramTestButton"
+        app:layout_constraintTop_toBottomOf="@+id/softResetICEButton" />
+
+    <EditText
+        android:id="@+id/ramDataText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="15"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ramTestButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="RGB Channel Control" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.rgb.RGBFragment">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <EditText
+                android:id="@+id/editTextRGBR"
+                android:layout_width="60dp"
+                android:inputType="text|textNoSuggestions"
+                android:text="0" />
+
+            <SeekBar
+                android:id="@+id/seekBarRed"
+                android:layout_width="344dp"
+                android:layout_height="match_parent"
+                android:max="255"
+                android:progressBackgroundTint="#400000"
+                android:progressTint="#d00000"
+                android:thumbTint="#ff0000" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <EditText
+                android:id="@+id/editTextRGBG"
+                android:inputType="textPersonName"
+                android:text="0" />
+
+            <SeekBar
+                android:id="@+id/seekBarGreen"
+                android:max="255"
+                android:layout_height="match_parent"
+                android:progressBackgroundTint="#004000"
+                android:progressTint="#00d000"
+                android:thumbTint="#00ff00" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <EditText
+                android:id="@+id/editTextRGBB"
+                android:inputType="textPersonName"
+                android:text="0"/>
+            <SeekBar
+                android:id="@+id/seekBarBlue"
+                android:max="255"
+                android:layout_height="match_parent"
+                android:progressBackgroundTint="#000040"
+                android:progressTint="#0000d0"
+                android:thumbTint="#0000ff"/>
+
+        </TableRow>
+
+
+
+
+
+    </TableLayout>
+
+
+
+</LinearLayout>

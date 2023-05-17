@@ -1,0 +1,139 @@
+PAD Specification File
+***************************
+
+PART TYPE:        iCE40UP5K
+Performance Grade:      High-Performance_1.2V
+PACKAGE:          SG48
+Package Status:                     Preliminary    Version 1.5
+
+Fri Mar  3 10:21:13 2023
+
+Pinout by Port Name:
++--------------+----------+--------------+-------+------------------------------------------+
+| Port Name    | Pin/Bank | Buffer Type  | Site  | Properties                               |
++--------------+----------+--------------+-------+------------------------------------------+
+| clock_in     | 35/0     | LVCMOS33_IN  | PR13B | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
+| dbgledb      | 46/2     | LVCMOS33_OUT | PL6A  | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| dbgledg      | 45/2     | LVCMOS33_OUT | PL8B  | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| dbgledr      | 44/2     | LVCMOS33_OUT | PL7B  | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| pwm_out      | 32/0     | LVCMOS33_OUT | PR17A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| reset_in     | 10/1     | LVCMOS33_IN  | PL17A | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
+| spiDebug4[0] | 13/1     | LVCMOS33_OUT | PL20A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| spiDebug4[1] | 18/1     | LVCMOS33_OUT | PL23B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| spiDebug4[2] | 26/0     | LVCMOS33_OUT | PR19A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| spiDebug4[3] | 12/1     | LVCMOS33_OUT | PL19A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| spiDebug4[4] | 31/0     | LVCMOS33_OUT | PR17B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| spiState[0]  | 43/0     | LVCMOS33_OUT | PR10A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| spiState[1]  | 42/0     | LVCMOS33_OUT | PR9A  | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| spiState[2]  | 38/0     | LVCMOS33_OUT | PR9B  | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| spiState[3]  | 21/1     | LVCMOS33_OUT | PL19B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| spiState[4]  | 23/0     | LVCMOS33_OUT | PR20A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| spiclk       | 47/2     | LVCMOS33_IN  | PL7A  | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
+| spicsn       | 9/1      | LVCMOS33_IN  | PL16A | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
+| spimiso      | 4/2      | LVCMOS33_OUT | PL10A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| spimosi      | 3/2      | LVCMOS33_IN  | PL10B | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
++--------------+----------+--------------+-------+------------------------------------------+
+
+Vccio by Bank:
++------+-------+
+| Bank | Vccio |
++------+-------+
+| 0    | 3.3V  |
+| 1    | 3.3V  |
+| 2    | 3.3V  |
++------+-------+
+
+Pinout by Pin Number:
++----------+---------------------+------------+--------------+-------+------------------+
+| Pin/Bank | Pin Info            | Constraint | Buffer Type  | Site  | Dual Function    |
++----------+---------------------+------------+--------------+-------+------------------+
+| 2/2      |     unused, PULL:UP |            |              | PL9A  |                  |
+| 3/2      | spimosi             | LOCATED    | LVCMOS33_IN  | PL10B |                  |
+| 4/2      | spimiso             | LOCATED    | LVCMOS33_OUT | PL10A |                  |
+| 6/1      |     unused, PULL:UP |            |              | PL14B |                  |
+| 9/1      | spicsn              | LOCATED    | LVCMOS33_IN  | PL16A |                  |
+| 10/1     | reset_in            | LOCATED    | LVCMOS33_IN  | PL17A |                  |
+| 11/1     |     unused, PULL:UP |            |              | PL18A |                  |
+| 12/1     | spiDebug4[3]        | LOCATED    | LVCMOS33_OUT | PL19A |                  |
+| 13/1     | spiDebug4[0]        | LOCATED    | LVCMOS33_OUT | PL20A |                  |
+| 14/1     |     unused, PULL:UP |            |              | PL24A | SPI_SO           |
+| 15/1     |     unused, PULL:UP |            |              | PL25A | SPISCK           |
+| 16/1     |     unused, PULL:UP |            |              | PL25B | SPI_SS           |
+| 17/1     |     unused, PULL:UP |            |              | PL24B | SPI_SI           |
+| 18/1     | spiDebug4[1]        | LOCATED    | LVCMOS33_OUT | PL23B |                  |
+| 19/1     |     unused, PULL:UP |            |              | PL22B |                  |
+| 20/1     |     unused, PULL:UP |            |              | PL20B | PCLKT1_0         |
+| 21/1     | spiState[3]         | LOCATED    | LVCMOS33_OUT | PL19B |                  |
+| 23/0     | spiState[4]         | LOCATED    | LVCMOS33_OUT | PR20A |                  |
+| 25/0     |     unused, PULL:UP |            |              | PR20B |                  |
+| 26/0     | spiDebug4[2]        | LOCATED    | LVCMOS33_OUT | PR19A |                  |
+| 27/0     |     unused, PULL:UP |            |              | PR19B |                  |
+| 28/0     |     unused, PULL:UP |            |              | PR18A |                  |
+| 31/0     | spiDebug4[4]        |            | LVCMOS33_OUT | PR17B |                  |
+| 32/0     | pwm_out             | LOCATED    | LVCMOS33_OUT | PR17A |                  |
+| 34/0     |     unused, PULL:UP |            |              | PR14B |                  |
+| 35/0     | clock_in            | LOCATED    | LVCMOS33_IN  | PR13B | GPLL_IN/PCLKT0_1 |
+| 36/0     |     unused, PULL:UP |            |              | PR10B |                  |
+| 37/0     |     unused, PULL:UP |            |              | PR14A | PCLKT0_0         |
+| 38/0     | spiState[2]         | LOCATED    | LVCMOS33_OUT | PR9B  |                  |
+| 39/0     |                     |            |              | PR5A  | RGB0             |
+| 40/0     |                     |            |              | PR6A  | RGB1             |
+| 41/0     |                     |            |              | PR7A  | RGB2             |
+| 42/0     | spiState[1]         | LOCATED    | LVCMOS33_OUT | PR9A  |                  |
+| 43/0     | spiState[0]         | LOCATED    | LVCMOS33_OUT | PR10A |                  |
+| 44/2     | dbgledr             | LOCATED    | LVCMOS33_OUT | PL7B  | PCLKT2_0         |
+| 45/2     | dbgledg             | LOCATED    | LVCMOS33_OUT | PL8B  |                  |
+| 46/2     | dbgledb             | LOCATED    | LVCMOS33_OUT | PL6A  |                  |
+| 47/2     | spiclk              | LOCATED    | LVCMOS33_IN  | PL7A  |                  |
+| 48/2     |     unused, PULL:UP |            |              | PL8A  |                  |
+| PL6B/2   |     unused, PULL:UP |            |              | PL6B  |                  |
+| PL9B/2   |     unused, PULL:UP |            |              | PL9B  |                  |
+| PL13A/1  |     unused, PULL:UP |            |              | PL13A |                  |
+| PL13B/1  |     unused, PULL:UP |            |              | PL13B | PCLKT1_2         |
+| PL14A/1  |     unused, PULL:UP |            |              | PL14A | PCLKT1_1         |
+| PL15A/1  |     unused, PULL:UP |            |              | PL15A |                  |
+| PL15B/1  |     unused, PULL:UP |            |              | PL15B |                  |
+| PL16B/1  |     unused, PULL:UP |            |              | PL16B |                  |
+| PL17B/1  |     unused, PULL:UP |            |              | PL17B |                  |
+| PL18B/1  |     unused, PULL:UP |            |              | PL18B |                  |
+| PL21A/1  |     unused, PULL:UP |            |              | PL21A |                  |
+| PL21B/1  |     unused, PULL:UP |            |              | PL21B |                  |
+| PL22A/1  |     unused, PULL:UP |            |              | PL22A |                  |
+| PL23A/1  |     unused, PULL:UP |            |              | PL23A |                  |
+| PR13A/0  |     unused, PULL:UP |            |              | PR13A |                  |
+| PR18B/0  |     unused, PULL:UP |            |              | PR18B |                  |
+| PR22A/0  |     unused, PULL:UP |            |              | PR22A |                  |
++----------+---------------------+------------+--------------+-------+------------------+
+
+
+Locate Constraints for each Pin: 
+
+ldc_set_location -site {35} [ get_ports {clock_in} ]
+ldc_set_location -site {46} [ get_ports {dbgledb} ]
+ldc_set_location -site {45} [ get_ports {dbgledg} ]
+ldc_set_location -site {44} [ get_ports {dbgledr} ]
+ldc_set_location -site {32} [ get_ports {pwm_out} ]
+ldc_set_location -site {10} [ get_ports {reset_in} ]
+ldc_set_location -site {13} [ get_ports {spiDebug4[0]} ]
+ldc_set_location -site {18} [ get_ports {spiDebug4[1]} ]
+ldc_set_location -site {26} [ get_ports {spiDebug4[2]} ]
+ldc_set_location -site {12} [ get_ports {spiDebug4[3]} ]
+ldc_set_location -site {31} [ get_ports {spiDebug4[4]} ]
+ldc_set_location -site {43} [ get_ports {spiState[0]} ]
+ldc_set_location -site {42} [ get_ports {spiState[1]} ]
+ldc_set_location -site {38} [ get_ports {spiState[2]} ]
+ldc_set_location -site {21} [ get_ports {spiState[3]} ]
+ldc_set_location -site {23} [ get_ports {spiState[4]} ]
+ldc_set_location -site {47} [ get_ports {spiclk} ]
+ldc_set_location -site {9} [ get_ports {spicsn} ]
+ldc_set_location -site {4} [ get_ports {spimiso} ]
+ldc_set_location -site {3} [ get_ports {spimosi} ]
+
+
+
+
+
+Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
+
+Fri Mar  3 10:21:13 2023
+

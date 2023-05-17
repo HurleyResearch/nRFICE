@@ -1,0 +1,24 @@
+if {![file exists "E:/verilog/NRFICE04/sim/sim.mpf"]} { 
+	project new "E:/verilog/NRFICE04/sim" sim
+	project addfile "E:/verilog/NRFICE04/pwm.v" verilog
+	project addfile "E:/verilog/NRFICE04/spi.v" verilog
+	project addfile "E:/verilog/NRFICE04/ebr8x16/rtl/ebr8x16.v" verilog
+	project addfile "E:/verilog/NRFICE04/top.v" verilog
+	project addfile "E:/verilog/NRFICE04/testbench.v" verilog
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+
+	vlog  +incdir+"E:/verilog/NRFICE04" -work work  "E:/verilog/NRFICE04/pwm.v"
+	vlog  +incdir+"E:/verilog/NRFICE04" -work work  "E:/verilog/NRFICE04/spi.v"
+	vlog  +incdir+"E:/verilog/NRFICE04/ebr8x16/rtl" -work work  "E:/verilog/NRFICE04/ebr8x16/rtl/ebr8x16.v"
+	vlog  +incdir+"E:/verilog/NRFICE04" -work work  "E:/verilog/NRFICE04/top.v"
+	vlog  +incdir+"E:/verilog/NRFICE04" -work work  "E:/verilog/NRFICE04/testbench.v"
+} else {
+	project open "E:/verilog/NRFICE04/sim/sim"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -lib work -L pmi_work -L ovi_ice40up  toptb 
+view wave
+add wave /*
+run 1 ms

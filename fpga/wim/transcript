@@ -1,0 +1,1260 @@
+# Reading pref.tcl
+# do E:/verilog/NRFICE04/wim/wim.mdo
+# Loading project wim
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+# Start time: 17:23:04 on Feb 06,2023
+# vlog -reportprogress 300 "+incdir+"E:/verilog/NRFICE04/impl_1"" -work work E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo 
+# -- Compiling module top
+# -- Compiling module spi_SLICE_0
+# -- Compiling module fa2
+# -- Compiling module gnd
+# -- Compiling module spi_SLICE_1
+# -- Compiling module spi_SLICE_2
+# -- Compiling module spi_SLICE_3
+# -- Compiling module spi_SLICE_4
+# -- Compiling module vcc
+# -- Compiling module spi_SLICE_5
+# -- Compiling module lut4
+# -- Compiling module lut40001
+# -- Compiling module ffsre2
+# -- Compiling module spi_SLICE_6
+# -- Compiling module lut40002
+# -- Compiling module lut40003
+# -- Compiling module spi_SLICE_8
+# -- Compiling module lut40004
+# -- Compiling module lut40005
+# -- Compiling module spi_SLICE_10
+# -- Compiling module lut40006
+# -- Compiling module SLICE_11
+# -- Compiling module lut40007
+# -- Compiling module spi_SLICE_14
+# -- Compiling module lut40008
+# -- Compiling module spi_SLICE_16
+# -- Compiling module lut40009
+# -- Compiling module spi_SLICE_18
+# -- Compiling module lut40010
+# -- Compiling module lut40011
+# -- Compiling module spi_SLICE_20
+# -- Compiling module spi_SLICE_22
+# -- Compiling module spi_SLICE_24
+# -- Compiling module lut40012
+# -- Compiling module lut40013
+# -- Compiling module spi_SLICE_25
+# -- Compiling module lut40014
+# -- Compiling module lut40015
+# -- Compiling module spi_SLICE_27
+# -- Compiling module lut40016
+# -- Compiling module spi_SLICE_29
+# -- Compiling module lut40017
+# -- Compiling module lut40018
+# -- Compiling module spi_SLICE_31
+# -- Compiling module lut40019
+# -- Compiling module lut40020
+# -- Compiling module spi_SLICE_33
+# -- Compiling module lut40021
+# -- Compiling module spi_SLICE_38
+# -- Compiling module lut40022
+# -- Compiling module lut40023
+# -- Compiling module ffsre20024
+# -- Compiling module spi_SLICE_40
+# -- Compiling module lut40025
+# -- Compiling module lut40026
+# -- Compiling module spi_SLICE_42
+# -- Compiling module spi_SLICE_44
+# -- Compiling module lut40027
+# -- Compiling module lut40028
+# -- Compiling module spi_SLICE_46
+# -- Compiling module lut40029
+# -- Compiling module lut40030
+# -- Compiling module spi_SLICE_48
+# -- Compiling module lut40031
+# -- Compiling module lut40032
+# -- Compiling module spi_SLICE_50
+# -- Compiling module lut40033
+# -- Compiling module spi_SLICE_51
+# -- Compiling module lut40034
+# -- Compiling module spi_SLICE_53
+# -- Compiling module lut40035
+# -- Compiling module spi_SLICE_56
+# -- Compiling module lut40036
+# -- Compiling module spi_SLICE_58
+# -- Compiling module lut40037
+# -- Compiling module lut40038
+# -- Compiling module spi_SLICE_59
+# -- Compiling module lut40039
+# -- Compiling module lut40040
+# -- Compiling module spi_SLICE_61
+# -- Compiling module lut40041
+# -- Compiling module lut40042
+# -- Compiling module spi_SLICE_63
+# -- Compiling module lut40043
+# -- Compiling module lut40044
+# -- Compiling module spi_SLICE_65
+# -- Compiling module lut40045
+# -- Compiling module lut40046
+# -- Compiling module spi_SLICE_67
+# -- Compiling module lut40047
+# -- Compiling module lut40048
+# -- Compiling module spi_SLICE_71
+# -- Compiling module lut40049
+# -- Compiling module lut40050
+# -- Compiling module spi_SLICE_74
+# -- Compiling module lut40051
+# -- Compiling module lut40052
+# -- Compiling module spi_SLICE_76
+# -- Compiling module SLICE_81
+# -- Compiling module lut40053
+# -- Compiling module lut40054
+# -- Compiling module SLICE_84
+# -- Compiling module lut40055
+# -- Compiling module lut40056
+# -- Compiling module SLICE_86
+# -- Compiling module lut40057
+# -- Compiling module lut40058
+# -- Compiling module spi_SLICE_88
+# -- Compiling module lut40059
+# -- Compiling module lut40060
+# -- Compiling module spi_SLICE_89
+# -- Compiling module lut40061
+# -- Compiling module spi_SLICE_90
+# -- Compiling module lut40062
+# -- Compiling module lut40063
+# -- Compiling module spi_SLICE_92
+# -- Compiling module lut40064
+# -- Compiling module lut40065
+# -- Compiling module spi_SLICE_93
+# -- Compiling module lut40066
+# -- Compiling module lut40067
+# -- Compiling module spi_SLICE_94
+# -- Compiling module lut40068
+# -- Compiling module lut40069
+# -- Compiling module spi_SLICE_95
+# -- Compiling module lut40070
+# -- Compiling module lut40071
+# -- Compiling module spi_SLICE_97
+# -- Compiling module lut40072
+# -- Compiling module lut40073
+# -- Compiling module spi_SLICE_98
+# -- Compiling module lut40074
+# -- Compiling module lut40075
+# -- Compiling module spi_SLICE_100
+# -- Compiling module lut40076
+# -- Compiling module lut40077
+# -- Compiling module spi_SLICE_102
+# -- Compiling module lut40078
+# -- Compiling module lut40079
+# -- Compiling module spi_SLICE_105
+# -- Compiling module lut40080
+# -- Compiling module lut40081
+# -- Compiling module spi_SLICE_106
+# -- Compiling module lut40082
+# -- Compiling module lut40083
+# -- Compiling module spi_SLICE_107
+# -- Compiling module lut40084
+# -- Compiling module lut40085
+# -- Compiling module spi_SLICE_108
+# -- Compiling module lut40086
+# -- Compiling module lut40087
+# -- Compiling module spi_SLICE_109
+# -- Compiling module lut40088
+# -- Compiling module lut40089
+# -- Compiling module spi_SLICE_110
+# -- Compiling module lut40090
+# -- Compiling module spi_SLICE_111
+# -- Compiling module lut40091
+# -- Compiling module lut40092
+# -- Compiling module spi_SLICE_112
+# -- Compiling module lut40093
+# -- Compiling module lut40094
+# -- Compiling module spi_SLICE_114
+# -- Compiling module lut40095
+# -- Compiling module spi_SLICE_115
+# -- Compiling module lut40096
+# -- Compiling module lut40097
+# -- Compiling module spi_SLICE_116
+# -- Compiling module lut40098
+# -- Compiling module lut40099
+# -- Compiling module spi_SLICE_118
+# -- Compiling module lut40100
+# -- Compiling module lut40101
+# -- Compiling module spi_SLICE_120
+# -- Compiling module lut40102
+# -- Compiling module spi_SLICE_121
+# -- Compiling module lut40103
+# -- Compiling module lut40104
+# -- Compiling module spi_SLICE_127
+# -- Compiling module lut40105
+# -- Compiling module spi_SLICE_129
+# -- Compiling module lut40106
+# -- Compiling module spi_SLICE_130
+# -- Compiling module lut40107
+# -- Compiling module lut40108
+# -- Compiling module spi_SLICE_131
+# -- Compiling module lut40109
+# -- Compiling module lut40110
+# -- Compiling module spi_SLICE_132
+# -- Compiling module lut40111
+# -- Compiling module spi_SLICE_135
+# -- Compiling module lut40112
+# -- Compiling module spi_SLICE_137
+# -- Compiling module lut40113
+# -- Compiling module lut40114
+# -- Compiling module spi_SLICE_138
+# -- Compiling module lut40115
+# -- Compiling module lut40116
+# -- Compiling module spi_SLICE_139
+# -- Compiling module lut40117
+# -- Compiling module lut40118
+# -- Compiling module spi_SLICE_141
+# -- Compiling module lut40119
+# -- Compiling module lut40120
+# -- Compiling module spi_SLICE_143
+# -- Compiling module lut40121
+# -- Compiling module lut40122
+# -- Compiling module pwm_SLICE_146
+# -- Compiling module lut40123
+# -- Compiling module lut40124
+# -- Compiling module spi_SLICE_148
+# -- Compiling module lut40125
+# -- Compiling module lut40126
+# -- Compiling module SLICE_150
+# -- Compiling module lut40127
+# -- Compiling module lut40128
+# -- Compiling module spi_SLICE_152
+# -- Compiling module lut40129
+# -- Compiling module lut40130
+# -- Compiling module spi_SLICE_153
+# -- Compiling module lut40131
+# -- Compiling module spi_SLICE_156
+# -- Compiling module lut40132
+# -- Compiling module lut40133
+# -- Compiling module spi_SLICE_159
+# -- Compiling module lut40134
+# -- Compiling module lut40135
+# -- Compiling module spi_SLICE_161
+# -- Compiling module lut40136
+# -- Compiling module spi_SLICE_163
+# -- Compiling module lut40137
+# -- Compiling module lut40138
+# -- Compiling module spi_SLICE_165
+# -- Compiling module lut40139
+# -- Compiling module lut40140
+# -- Compiling module spi_SLICE_166
+# -- Compiling module SLICE_167
+# -- Compiling module lut40141
+# -- Compiling module pwm_out
+# -- Compiling module BB_B_B
+# -- Compiling module spimiso
+# -- Compiling module spiState_4_
+# -- Compiling module spiState_3_
+# -- Compiling module spiState_2_
+# -- Compiling module spiState_1_
+# -- Compiling module spiState_0_
+# -- Compiling module spiBitCount_3_
+# -- Compiling module spiBitCount_2_
+# -- Compiling module spiBitCount_1_
+# -- Compiling module spiBitCount_0_
+# -- Compiling module readWordHighFour_3_
+# -- Compiling module readWordHighFour_2_
+# -- Compiling module readWordHighFour_1_
+# -- Compiling module readWordHighFour_0_
+# -- Compiling module dbgledr
+# -- Compiling module dbgledg
+# -- Compiling module dbgledb
+# -- Compiling module clock_in
+# -- Compiling module reset_in
+# -- Compiling module spicsn
+# -- Compiling module spiclk
+# -- Compiling module spimosi
+# 
+# Top level modules:
+# 	top
+# End time: 17:23:04 on Feb 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+# Start time: 17:23:04 on Feb 06,2023
+# vlog -reportprogress 300 "+incdir+"E:/verilog/NRFICE04"" -work work E:/verilog/NRFICE04/testbench.v 
+# -- Compiling module toptb
+# 
+# Top level modules:
+# 	toptb
+# End time: 17:23:04 on Feb 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -lib work -L pmi_work -L ovi_ice40up "+transport_path_delays" "+transport_int_delays" toptb -sdfmax "/toptb/UUT=E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.sdf" 
+# Start time: 17:23:05 on Feb 06,2023
+# //  ModelSim - Lattice FPGA Edition 2021.4 Oct 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim - Lattice FPGA Edition and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.toptb
+# Loading work.top
+# Loading work.spi_SLICE_0
+# Loading work.fa2
+# Loading ovi_ice40up.FA2
+# Loading ovi_ice40up.LUT4
+# Loading ovi_ice40up.LUT4_SIM
+# Loading work.gnd
+# Loading ovi_ice40up.VLO
+# Loading work.spi_SLICE_1
+# Loading work.spi_SLICE_2
+# Loading work.spi_SLICE_3
+# Loading work.spi_SLICE_4
+# Loading work.vcc
+# Loading ovi_ice40up.VHI
+# Loading work.spi_SLICE_5
+# Loading work.lut4
+# Loading work.lut40001
+# Loading work.ffsre2
+# Loading ovi_ice40up.FD1P3XZ
+# Loading work.spi_SLICE_6
+# Loading work.lut40002
+# Loading work.lut40003
+# Loading work.spi_SLICE_8
+# Loading work.lut40004
+# Loading work.lut40005
+# Loading work.spi_SLICE_10
+# Loading work.lut40006
+# Loading work.SLICE_11
+# Loading work.lut40007
+# Loading work.spi_SLICE_14
+# Loading work.lut40008
+# Loading work.spi_SLICE_16
+# Loading work.lut40009
+# Loading work.spi_SLICE_18
+# Loading work.lut40010
+# Loading work.lut40011
+# Loading work.spi_SLICE_20
+# Loading work.spi_SLICE_22
+# Loading work.spi_SLICE_24
+# Loading work.lut40012
+# Loading work.lut40013
+# Loading work.spi_SLICE_25
+# Loading work.lut40014
+# Loading work.lut40015
+# Loading work.spi_SLICE_27
+# Loading work.lut40016
+# Loading work.spi_SLICE_29
+# Loading work.lut40017
+# Loading work.lut40018
+# Loading work.spi_SLICE_31
+# Loading work.lut40019
+# Loading work.lut40020
+# Loading work.spi_SLICE_33
+# Loading work.lut40021
+# Loading work.spi_SLICE_38
+# Loading work.lut40022
+# Loading work.lut40023
+# Loading work.ffsre20024
+# Loading work.spi_SLICE_40
+# Loading work.lut40025
+# Loading work.lut40026
+# Loading work.spi_SLICE_42
+# Loading work.spi_SLICE_44
+# Loading work.lut40027
+# Loading work.lut40028
+# Loading work.spi_SLICE_46
+# Loading work.lut40029
+# Loading work.lut40030
+# Loading work.spi_SLICE_48
+# Loading work.lut40031
+# Loading work.lut40032
+# Loading work.spi_SLICE_50
+# Loading work.lut40033
+# Loading work.spi_SLICE_51
+# Loading work.lut40034
+# Loading work.spi_SLICE_53
+# Loading work.lut40035
+# Loading work.spi_SLICE_56
+# Loading work.lut40036
+# Loading work.spi_SLICE_58
+# Loading work.lut40037
+# Loading work.lut40038
+# Loading work.spi_SLICE_59
+# Loading work.lut40039
+# Loading work.lut40040
+# Loading work.spi_SLICE_61
+# Loading work.lut40041
+# Loading work.lut40042
+# Loading work.spi_SLICE_63
+# Loading work.lut40043
+# Loading work.lut40044
+# Loading work.spi_SLICE_65
+# Loading work.lut40045
+# Loading work.lut40046
+# Loading work.spi_SLICE_67
+# Loading work.lut40047
+# Loading work.lut40048
+# Loading work.spi_SLICE_71
+# Loading work.lut40049
+# Loading work.lut40050
+# Loading work.spi_SLICE_74
+# Loading work.lut40051
+# Loading work.lut40052
+# Loading work.spi_SLICE_76
+# Loading work.SLICE_81
+# Loading work.lut40053
+# Loading work.lut40054
+# Loading work.SLICE_84
+# Loading work.lut40055
+# Loading work.lut40056
+# Loading work.SLICE_86
+# Loading work.lut40057
+# Loading work.lut40058
+# Loading work.spi_SLICE_88
+# Loading work.lut40059
+# Loading work.lut40060
+# Loading work.spi_SLICE_89
+# Loading work.lut40061
+# Loading work.spi_SLICE_90
+# Loading work.lut40062
+# Loading work.lut40063
+# Loading work.spi_SLICE_92
+# Loading work.lut40064
+# Loading work.lut40065
+# Loading work.spi_SLICE_93
+# Loading work.lut40066
+# Loading work.lut40067
+# Loading work.spi_SLICE_94
+# Loading work.lut40068
+# Loading work.lut40069
+# Loading work.spi_SLICE_95
+# Loading work.lut40070
+# Loading work.lut40071
+# Loading work.spi_SLICE_97
+# Loading work.lut40072
+# Loading work.lut40073
+# Loading work.spi_SLICE_98
+# Loading work.lut40074
+# Loading work.lut40075
+# Loading work.spi_SLICE_100
+# Loading work.lut40076
+# Loading work.lut40077
+# Loading work.spi_SLICE_102
+# Loading work.lut40078
+# Loading work.lut40079
+# Loading work.spi_SLICE_105
+# Loading work.lut40080
+# Loading work.lut40081
+# Loading work.spi_SLICE_106
+# Loading work.lut40082
+# Loading work.lut40083
+# Loading work.spi_SLICE_107
+# Loading work.lut40084
+# Loading work.lut40085
+# Loading work.spi_SLICE_108
+# Loading work.lut40086
+# Loading work.lut40087
+# Loading work.spi_SLICE_109
+# Loading work.lut40088
+# Loading work.lut40089
+# Loading work.spi_SLICE_110
+# Loading work.lut40090
+# Loading work.spi_SLICE_111
+# Loading work.lut40091
+# Loading work.lut40092
+# Loading work.spi_SLICE_112
+# Loading work.lut40093
+# Loading work.lut40094
+# Loading work.spi_SLICE_114
+# Loading work.lut40095
+# Loading work.spi_SLICE_115
+# Loading work.lut40096
+# Loading work.lut40097
+# Loading work.spi_SLICE_116
+# Loading work.lut40098
+# Loading work.lut40099
+# Loading work.spi_SLICE_118
+# Loading work.lut40100
+# Loading work.lut40101
+# Loading work.spi_SLICE_120
+# Loading work.lut40102
+# Loading work.spi_SLICE_121
+# Loading work.lut40103
+# Loading work.lut40104
+# Loading work.spi_SLICE_127
+# Loading work.lut40105
+# Loading work.spi_SLICE_129
+# Loading work.lut40106
+# Loading work.spi_SLICE_130
+# Loading work.lut40107
+# Loading work.lut40108
+# Loading work.spi_SLICE_131
+# Loading work.lut40109
+# Loading work.lut40110
+# Loading work.spi_SLICE_132
+# Loading work.lut40111
+# Loading work.spi_SLICE_135
+# Loading work.lut40112
+# Loading work.spi_SLICE_137
+# Loading work.lut40113
+# Loading work.lut40114
+# Loading work.spi_SLICE_138
+# Loading work.lut40115
+# Loading work.lut40116
+# Loading work.spi_SLICE_139
+# Loading work.lut40117
+# Loading work.lut40118
+# Loading work.spi_SLICE_141
+# Loading work.lut40119
+# Loading work.lut40120
+# Loading work.spi_SLICE_143
+# Loading work.lut40121
+# Loading work.lut40122
+# Loading work.pwm_SLICE_146
+# Loading work.lut40123
+# Loading work.lut40124
+# Loading work.spi_SLICE_148
+# Loading work.lut40125
+# Loading work.lut40126
+# Loading work.SLICE_150
+# Loading work.lut40127
+# Loading work.lut40128
+# Loading work.spi_SLICE_152
+# Loading work.lut40129
+# Loading work.lut40130
+# Loading work.spi_SLICE_153
+# Loading work.lut40131
+# Loading work.spi_SLICE_156
+# Loading work.lut40132
+# Loading work.lut40133
+# Loading work.spi_SLICE_159
+# Loading work.lut40134
+# Loading work.lut40135
+# Loading work.spi_SLICE_161
+# Loading work.lut40136
+# Loading work.spi_SLICE_163
+# Loading work.lut40137
+# Loading work.lut40138
+# Loading work.spi_SLICE_165
+# Loading work.lut40139
+# Loading work.lut40140
+# Loading work.spi_SLICE_166
+# Loading work.SLICE_167
+# Loading work.lut40141
+# Loading work.pwm_out
+# Loading work.BB_B_B
+# Loading ovi_ice40up.BB_B
+# Loading ovi_ice40up.PIO
+# Loading work.spimiso
+# Loading work.spiState_4_
+# Loading work.spiState_3_
+# Loading work.spiState_2_
+# Loading work.spiState_1_
+# Loading work.spiState_0_
+# Loading work.spiBitCount_3_
+# Loading work.spiBitCount_2_
+# Loading work.spiBitCount_1_
+# Loading work.spiBitCount_0_
+# Loading work.readWordHighFour_3_
+# Loading work.readWordHighFour_2_
+# Loading work.readWordHighFour_1_
+# Loading work.readWordHighFour_0_
+# Loading work.dbgledr
+# Loading work.dbgledg
+# Loading work.dbgledb
+# Loading work.clock_in
+# Loading work.reset_in
+# Loading work.spicsn
+# Loading work.spiclk
+# Loading work.spimosi
+# SDF 2021.4 Compiler 2021.10 Oct 14 2021
+# 
+# Loading instances from E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.sdf
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UUT'.  Expected 13, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /toptb/UUT File: E:/verilog/NRFICE04/testbench.v Line: 39
+# ** Warning: (vsim-3722) E:/verilog/NRFICE04/testbench.v(39): [TFMPC] - Missing connection for port 'spiState'.
+# ** Warning: (vsim-3722) E:/verilog/NRFICE04/testbench.v(39): [TFMPC] - Missing connection for port 'spiBitCount'.
+# ** Warning: (vsim-3722) E:/verilog/NRFICE04/testbench.v(39): [TFMPC] - Missing connection for port 'readWordHighFour'.
+# ** Warning: (vsim-3722) E:/verilog/NRFICE04/testbench.v(39): [TFMPC] - Missing connection for port 'dbgledr'.
+# ** Warning: (vsim-3722) E:/verilog/NRFICE04/testbench.v(39): [TFMPC] - Missing connection for port 'dbgledg'.
+# ** Warning: (vsim-3722) E:/verilog/NRFICE04/testbench.v(39): [TFMPC] - Missing connection for port 'dbgledb'.
+# Loading timing data from E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /toptb File: E:/verilog/NRFICE04/testbench.v
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Error: $setup( LSR:25405995 ps, posedge CLK:25406009 ps, 423 ps );
+#    Time: 25406009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_59 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1795
+# ** Error: $setup( LSR:25405995 ps, posedge CLK:25406009 ps, 423 ps );
+#    Time: 25406009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_27 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1197
+# ** Error: $setup( LSR:25405995 ps, posedge CLK:25406009 ps, 423 ps );
+#    Time: 25406009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_24 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1112
+# ** Error: $setup( LSR:25405995 ps, posedge CLK:25406009 ps, 423 ps );
+#    Time: 25406009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_22 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1080
+# ** Error: $setup( LSR:25405995 ps, posedge CLK:25406009 ps, 423 ps );
+#    Time: 25406009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_20 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1048
+# ** Error: $setup( LSR:25405995 ps, posedge CLK:25406009 ps, 423 ps );
+#    Time: 25406009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_10 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 871
+# ** Error: $setup( LSR:25405995 ps, posedge CLK:25406009 ps, 423 ps );
+#    Time: 25406009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_8 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 829
+# ** Error: $setup( LSR:25405995 ps, posedge CLK:25406009 ps, 423 ps );
+#    Time: 25406009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_6 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 787
+# ** Error: $setup( LSR:38105995 ps, posedge CLK:38106009 ps, 423 ps );
+#    Time: 38106009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_59 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1795
+# ** Error: $setup( LSR:38105995 ps, posedge CLK:38106009 ps, 423 ps );
+#    Time: 38106009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_27 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1197
+# ** Error: $setup( LSR:38105995 ps, posedge CLK:38106009 ps, 423 ps );
+#    Time: 38106009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_24 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1112
+# ** Error: $setup( LSR:38105995 ps, posedge CLK:38106009 ps, 423 ps );
+#    Time: 38106009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_22 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1080
+# ** Error: $setup( LSR:38105995 ps, posedge CLK:38106009 ps, 423 ps );
+#    Time: 38106009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_20 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1048
+# ** Error: $setup( LSR:38105995 ps, posedge CLK:38106009 ps, 423 ps );
+#    Time: 38106009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_10 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 871
+# ** Error: $setup( LSR:38105995 ps, posedge CLK:38106009 ps, 423 ps );
+#    Time: 38106009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_8 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 829
+# ** Error: $setup( LSR:38105995 ps, posedge CLK:38106009 ps, 423 ps );
+#    Time: 38106009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_6 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 787
+# ** Error: $setup( LSR:50805995 ps, posedge CLK:50806009 ps, 423 ps );
+#    Time: 50806009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_59 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1795
+# ** Error: $setup( LSR:50805995 ps, posedge CLK:50806009 ps, 423 ps );
+#    Time: 50806009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_27 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1197
+# ** Error: $setup( LSR:50805995 ps, posedge CLK:50806009 ps, 423 ps );
+#    Time: 50806009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_24 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1112
+# ** Error: $setup( LSR:50805995 ps, posedge CLK:50806009 ps, 423 ps );
+#    Time: 50806009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_22 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1080
+# ** Error: $setup( LSR:50805995 ps, posedge CLK:50806009 ps, 423 ps );
+#    Time: 50806009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_20 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1048
+# ** Error: $setup( LSR:50805995 ps, posedge CLK:50806009 ps, 423 ps );
+#    Time: 50806009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_10 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 871
+# ** Error: $setup( LSR:50805995 ps, posedge CLK:50806009 ps, 423 ps );
+#    Time: 50806009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_8 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 829
+# ** Error: $setup( LSR:50805995 ps, posedge CLK:50806009 ps, 423 ps );
+#    Time: 50806009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_6 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 787
+# ** Note: $stop    : E:/verilog/NRFICE04/testbench.v(194)
+#    Time: 500 us  Iteration: 0  Instance: /toptb
+# Break in Module toptb at E:/verilog/NRFICE04/testbench.v line 194
+vsim -voptargs=+acc -lib work -L pmi_work -L ovi_ice40up +transport_path_delays +transport_int_delays -sdfmax /toptb/UUT=E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.sdf work.toptb
+# End time: 17:23:49 on Feb 06,2023, Elapsed time: 0:00:44
+# Errors: 24, Warnings: 13
+# vsim -voptargs="+acc" -lib work -L pmi_work -L ovi_ice40up "+transport_path_delays" "+transport_int_delays" -sdfmax "/toptb/UUT=E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.sdf" work.toptb 
+# Start time: 17:23:49 on Feb 06,2023
+# Loading work.toptb
+# Loading work.top
+# Loading work.spi_SLICE_0
+# Loading work.fa2
+# Loading ovi_ice40up.FA2
+# Loading ovi_ice40up.LUT4
+# Loading ovi_ice40up.LUT4_SIM
+# Loading work.gnd
+# Loading ovi_ice40up.VLO
+# Loading work.spi_SLICE_1
+# Loading work.spi_SLICE_2
+# Loading work.spi_SLICE_3
+# Loading work.spi_SLICE_4
+# Loading work.vcc
+# Loading ovi_ice40up.VHI
+# Loading work.spi_SLICE_5
+# Loading work.lut4
+# Loading work.lut40001
+# Loading work.ffsre2
+# Loading ovi_ice40up.FD1P3XZ
+# Loading work.spi_SLICE_6
+# Loading work.lut40002
+# Loading work.lut40003
+# Loading work.spi_SLICE_8
+# Loading work.lut40004
+# Loading work.lut40005
+# Loading work.spi_SLICE_10
+# Loading work.lut40006
+# Loading work.SLICE_11
+# Loading work.lut40007
+# Loading work.spi_SLICE_14
+# Loading work.lut40008
+# Loading work.spi_SLICE_16
+# Loading work.lut40009
+# Loading work.spi_SLICE_18
+# Loading work.lut40010
+# Loading work.lut40011
+# Loading work.spi_SLICE_20
+# Loading work.spi_SLICE_22
+# Loading work.spi_SLICE_24
+# Loading work.lut40012
+# Loading work.lut40013
+# Loading work.spi_SLICE_25
+# Loading work.lut40014
+# Loading work.lut40015
+# Loading work.spi_SLICE_27
+# Loading work.lut40016
+# Loading work.spi_SLICE_29
+# Loading work.lut40017
+# Loading work.lut40018
+# Loading work.spi_SLICE_31
+# Loading work.lut40019
+# Loading work.lut40020
+# Loading work.spi_SLICE_33
+# Loading work.lut40021
+# Loading work.spi_SLICE_38
+# Loading work.lut40022
+# Loading work.lut40023
+# Loading work.ffsre20024
+# Loading work.spi_SLICE_40
+# Loading work.lut40025
+# Loading work.lut40026
+# Loading work.spi_SLICE_42
+# Loading work.spi_SLICE_44
+# Loading work.lut40027
+# Loading work.lut40028
+# Loading work.spi_SLICE_46
+# Loading work.lut40029
+# Loading work.lut40030
+# Loading work.spi_SLICE_48
+# Loading work.lut40031
+# Loading work.lut40032
+# Loading work.spi_SLICE_50
+# Loading work.lut40033
+# Loading work.spi_SLICE_51
+# Loading work.lut40034
+# Loading work.spi_SLICE_53
+# Loading work.lut40035
+# Loading work.spi_SLICE_56
+# Loading work.lut40036
+# Loading work.spi_SLICE_58
+# Loading work.lut40037
+# Loading work.lut40038
+# Loading work.spi_SLICE_59
+# Loading work.lut40039
+# Loading work.lut40040
+# Loading work.spi_SLICE_61
+# Loading work.lut40041
+# Loading work.lut40042
+# Loading work.spi_SLICE_63
+# Loading work.lut40043
+# Loading work.lut40044
+# Loading work.spi_SLICE_65
+# Loading work.lut40045
+# Loading work.lut40046
+# Loading work.spi_SLICE_67
+# Loading work.lut40047
+# Loading work.lut40048
+# Loading work.spi_SLICE_71
+# Loading work.lut40049
+# Loading work.lut40050
+# Loading work.spi_SLICE_74
+# Loading work.lut40051
+# Loading work.lut40052
+# Loading work.spi_SLICE_76
+# Loading work.SLICE_81
+# Loading work.lut40053
+# Loading work.lut40054
+# Loading work.SLICE_84
+# Loading work.lut40055
+# Loading work.lut40056
+# Loading work.SLICE_86
+# Loading work.lut40057
+# Loading work.lut40058
+# Loading work.spi_SLICE_88
+# Loading work.lut40059
+# Loading work.lut40060
+# Loading work.spi_SLICE_89
+# Loading work.lut40061
+# Loading work.spi_SLICE_90
+# Loading work.lut40062
+# Loading work.lut40063
+# Loading work.spi_SLICE_92
+# Loading work.lut40064
+# Loading work.lut40065
+# Loading work.spi_SLICE_93
+# Loading work.lut40066
+# Loading work.lut40067
+# Loading work.spi_SLICE_94
+# Loading work.lut40068
+# Loading work.lut40069
+# Loading work.spi_SLICE_95
+# Loading work.lut40070
+# Loading work.lut40071
+# Loading work.spi_SLICE_97
+# Loading work.lut40072
+# Loading work.lut40073
+# Loading work.spi_SLICE_98
+# Loading work.lut40074
+# Loading work.lut40075
+# Loading work.spi_SLICE_100
+# Loading work.lut40076
+# Loading work.lut40077
+# Loading work.spi_SLICE_102
+# Loading work.lut40078
+# Loading work.lut40079
+# Loading work.spi_SLICE_105
+# Loading work.lut40080
+# Loading work.lut40081
+# Loading work.spi_SLICE_106
+# Loading work.lut40082
+# Loading work.lut40083
+# Loading work.spi_SLICE_107
+# Loading work.lut40084
+# Loading work.lut40085
+# Loading work.spi_SLICE_108
+# Loading work.lut40086
+# Loading work.lut40087
+# Loading work.spi_SLICE_109
+# Loading work.lut40088
+# Loading work.lut40089
+# Loading work.spi_SLICE_110
+# Loading work.lut40090
+# Loading work.spi_SLICE_111
+# Loading work.lut40091
+# Loading work.lut40092
+# Loading work.spi_SLICE_112
+# Loading work.lut40093
+# Loading work.lut40094
+# Loading work.spi_SLICE_114
+# Loading work.lut40095
+# Loading work.spi_SLICE_115
+# Loading work.lut40096
+# Loading work.lut40097
+# Loading work.spi_SLICE_116
+# Loading work.lut40098
+# Loading work.lut40099
+# Loading work.spi_SLICE_118
+# Loading work.lut40100
+# Loading work.lut40101
+# Loading work.spi_SLICE_120
+# Loading work.lut40102
+# Loading work.spi_SLICE_121
+# Loading work.lut40103
+# Loading work.lut40104
+# Loading work.spi_SLICE_127
+# Loading work.lut40105
+# Loading work.spi_SLICE_129
+# Loading work.lut40106
+# Loading work.spi_SLICE_130
+# Loading work.lut40107
+# Loading work.lut40108
+# Loading work.spi_SLICE_131
+# Loading work.lut40109
+# Loading work.lut40110
+# Loading work.spi_SLICE_132
+# Loading work.lut40111
+# Loading work.spi_SLICE_135
+# Loading work.lut40112
+# Loading work.spi_SLICE_137
+# Loading work.lut40113
+# Loading work.lut40114
+# Loading work.spi_SLICE_138
+# Loading work.lut40115
+# Loading work.lut40116
+# Loading work.spi_SLICE_139
+# Loading work.lut40117
+# Loading work.lut40118
+# Loading work.spi_SLICE_141
+# Loading work.lut40119
+# Loading work.lut40120
+# Loading work.spi_SLICE_143
+# Loading work.lut40121
+# Loading work.lut40122
+# Loading work.pwm_SLICE_146
+# Loading work.lut40123
+# Loading work.lut40124
+# Loading work.spi_SLICE_148
+# Loading work.lut40125
+# Loading work.lut40126
+# Loading work.SLICE_150
+# Loading work.lut40127
+# Loading work.lut40128
+# Loading work.spi_SLICE_152
+# Loading work.lut40129
+# Loading work.lut40130
+# Loading work.spi_SLICE_153
+# Loading work.lut40131
+# Loading work.spi_SLICE_156
+# Loading work.lut40132
+# Loading work.lut40133
+# Loading work.spi_SLICE_159
+# Loading work.lut40134
+# Loading work.lut40135
+# Loading work.spi_SLICE_161
+# Loading work.lut40136
+# Loading work.spi_SLICE_163
+# Loading work.lut40137
+# Loading work.lut40138
+# Loading work.spi_SLICE_165
+# Loading work.lut40139
+# Loading work.lut40140
+# Loading work.spi_SLICE_166
+# Loading work.SLICE_167
+# Loading work.lut40141
+# Loading work.pwm_out
+# Loading work.BB_B_B
+# Loading ovi_ice40up.BB_B
+# Loading ovi_ice40up.PIO
+# Loading work.spimiso
+# Loading work.spiState_4_
+# Loading work.spiState_3_
+# Loading work.spiState_2_
+# Loading work.spiState_1_
+# Loading work.spiState_0_
+# Loading work.spiBitCount_3_
+# Loading work.spiBitCount_2_
+# Loading work.spiBitCount_1_
+# Loading work.spiBitCount_0_
+# Loading work.readWordHighFour_3_
+# Loading work.readWordHighFour_2_
+# Loading work.readWordHighFour_1_
+# Loading work.readWordHighFour_0_
+# Loading work.dbgledr
+# Loading work.dbgledg
+# Loading work.dbgledb
+# Loading work.clock_in
+# Loading work.reset_in
+# Loading work.spicsn
+# Loading work.spiclk
+# Loading work.spimosi
+# Loading instances from E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.sdf
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UUT'.  Expected 13, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /toptb/UUT File: E:/verilog/NRFICE04/testbench.v Line: 39
+# ** Warning: (vsim-3722) E:/verilog/NRFICE04/testbench.v(39): [TFMPC] - Missing connection for port 'spiState'.
+# ** Warning: (vsim-3722) E:/verilog/NRFICE04/testbench.v(39): [TFMPC] - Missing connection for port 'spiBitCount'.
+# ** Warning: (vsim-3722) E:/verilog/NRFICE04/testbench.v(39): [TFMPC] - Missing connection for port 'readWordHighFour'.
+# ** Warning: (vsim-3722) E:/verilog/NRFICE04/testbench.v(39): [TFMPC] - Missing connection for port 'dbgledr'.
+# ** Warning: (vsim-3722) E:/verilog/NRFICE04/testbench.v(39): [TFMPC] - Missing connection for port 'dbgledg'.
+# ** Warning: (vsim-3722) E:/verilog/NRFICE04/testbench.v(39): [TFMPC] - Missing connection for port 'dbgledb'.
+# Loading timing data from E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /toptb File: E:/verilog/NRFICE04/testbench.v
+add wave -position insertpoint  \
+sim:/toptb/UUT/clock_in \
+sim:/toptb/UUT/reset_in \
+sim:/toptb/UUT/spicsn \
+sim:/toptb/UUT/spiclk \
+sim:/toptb/UUT/spimosi \
+sim:/toptb/UUT/pwm_out \
+sim:/toptb/UUT/spimiso \
+sim:/toptb/UUT/spiState \
+sim:/toptb/UUT/spiBitCount \
+sim:/toptb/UUT/readWordHighFour
+add wave -position insertpoint  \
+sim:/toptb/UUT/dbgledr \
+sim:/toptb/UUT/dbgledg \
+sim:/toptb/UUT/dbgledb \
+{sim:/toptb/UUT/\spi.n2541 } \
+{sim:/toptb/UUT/\spi.bitCount[6] } \
+{sim:/toptb/UUT/\spi.n2208 } \
+{sim:/toptb/UUT/\spi.bitCount[5] } \
+{sim:/toptb/UUT/\spi.bitCount_7__N_279[5] } \
+{sim:/toptb/UUT/\spi.bitCount_7__N_279[6] } \
+{sim:/toptb/UUT/\spi.n2210 } \
+{sim:/toptb/UUT/\spi.n2538 } \
+{sim:/toptb/UUT/\spi.bitCount[4] } \
+{sim:/toptb/UUT/\spi.n2206 } \
+sim:/toptb/UUT/spiBitCount_c_3 \
+{sim:/toptb/UUT/\spi.bitCount_7__N_279[3] } \
+{sim:/toptb/UUT/\spi.bitCount_7__N_279[4] } \
+{sim:/toptb/UUT/\spi.n2544 } \
+{sim:/toptb/UUT/\spi.bitCount[7] } \
+{sim:/toptb/UUT/\spi.bitCount_7__N_279[7] } \
+{sim:/toptb/UUT/\spi.n2535 } \
+sim:/toptb/UUT/spiBitCount_c_2 \
+{sim:/toptb/UUT/\spi.n2204 } \
+sim:/toptb/UUT/dbgledg_c \
+{sim:/toptb/UUT/\spi.bitCount_7__N_279[1] } \
+{sim:/toptb/UUT/\spi.bitCount_7__N_279[2] } \
+{sim:/toptb/UUT/\spi.n2532 } \
+sim:/toptb/UUT/VCC_net \
+sim:/toptb/UUT/spiBitCount_c_0 \
+{sim:/toptb/UUT/\spi.bitCount_7__N_279[0] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[27] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[26] } \
+{sim:/toptb/UUT/\spi.spiInWord[27] } \
+{sim:/toptb/UUT/\spi.next_16__N_128 } \
+{sim:/toptb/UUT/\spi.spiInWord[26] } \
+{sim:/toptb/UUT/\spi.n864 } \
+{sim:/toptb/UUT/\spi.spiInWord[25] } \
+sim:/toptb/UUT/reset_in_c \
+sim:/toptb/UUT/clock_in_c \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[24] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[25] } \
+{sim:/toptb/UUT/\spi.spiInWord[24] } \
+{sim:/toptb/UUT/\spi.ramAddr[7] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[22] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[23] } \
+{sim:/toptb/UUT/\spi.ramAddr[5] } \
+{sim:/toptb/UUT/\spi.ramAddr[6] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[1] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[0] } \
+{sim:/toptb/UUT/\spi.ramWriteData[1] } \
+{sim:/toptb/UUT/\spi.ramWriteData[0] } \
+{sim:/toptb/UUT/\spi.n963 } \
+{sim:/toptb/UUT/\spi.mosiBuf } \
+{sim:/toptb/UUT/\spi.n380 } \
+{sim:/toptb/UUT/\spimosi_c.sig_000.FeedThruLUT } \
+sim:/toptb/UUT/spimosi_c \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[20] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[21] } \
+{sim:/toptb/UUT/\spi.ramAddr[4] } \
+{sim:/toptb/UUT/\spi.ramAddr[3] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[18] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[19] } \
+{sim:/toptb/UUT/\spi.ramAddr[2] } \
+{sim:/toptb/UUT/\spi.ramAddr[1] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[16] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[17] } \
+{sim:/toptb/UUT/\spi.ramWriteData[15] } \
+{sim:/toptb/UUT/\spi.ramAddr[0] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[14] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[15] } \
+{sim:/toptb/UUT/\spi.ramWriteData[13] } \
+{sim:/toptb/UUT/\spi.ramWriteData[14] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[12] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[13] } \
+{sim:/toptb/UUT/\spi.ramWriteData[12] } \
+{sim:/toptb/UUT/\spi.ramWriteData[11] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[10] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[11] } \
+{sim:/toptb/UUT/\spi.ramWriteData[10] } \
+{sim:/toptb/UUT/\spi.ramWriteData[9] } \
+{sim:/toptb/UUT/\spi.next[2] } \
+{sim:/toptb/UUT/\spi.next[3] } \
+{sim:/toptb/UUT/\spi.csnBuf } \
+{sim:/toptb/UUT/\spi.clkBuf } \
+{sim:/toptb/UUT/\spi.n4 } \
+{sim:/toptb/UUT/\spi.next_16__N_98 } \
+{sim:/toptb/UUT/\spi.next_16__N_100 } \
+sim:/toptb/UUT/spiState_c_2 \
+sim:/toptb/UUT/spiState_c_3 \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[8] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[9] } \
+{sim:/toptb/UUT/\spi.ramWriteData[7] } \
+{sim:/toptb/UUT/\spi.ramWriteData[8] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[6] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[7] } \
+{sim:/toptb/UUT/\spi.ramWriteData[5] } \
+{sim:/toptb/UUT/\spi.ramWriteData[6] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[4] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[5] } \
+{sim:/toptb/UUT/\spi.ramWriteData[3] } \
+{sim:/toptb/UUT/\spi.ramWriteData[4] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[2] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[3] } \
+{sim:/toptb/UUT/\spi.ramWriteData[2] } \
+{sim:/toptb/UUT/\spi.readWord_15__N_44[12] } \
+{sim:/toptb/UUT/\spi.readWord_15__N_44[13] } \
+{sim:/toptb/UUT/\spi.n1_adj_336 } \
+{sim:/toptb/UUT/\spi.next_16__N_104 } \
+{sim:/toptb/UUT/\spi.n828 } \
+sim:/toptb/UUT/readWordHighFour_0_0 \
+{sim:/toptb/UUT/\spi.next_16__N_131 } \
+{sim:/toptb/UUT/\spi.n4_adj_337 } \
+sim:/toptb/UUT/readWordHighFour_0_1 \
+{sim:/toptb/UUT/\spi.readWord_15__N_44[10] } \
+{sim:/toptb/UUT/\spi.readWord_15__N_44[11] } \
+{sim:/toptb/UUT/\spi.readWord[10] } \
+{sim:/toptb/UUT/\spi.n1_adj_334 } \
+{sim:/toptb/UUT/\spi.n4_adj_335 } \
+{sim:/toptb/UUT/\spi.readWord[11] } \
+{sim:/toptb/UUT/\spi.readWord_15__N_44[8] } \
+{sim:/toptb/UUT/\spi.readWord_15__N_44[9] } \
+{sim:/toptb/UUT/\spi.n1_adj_332 } \
+{sim:/toptb/UUT/\spi.readWord[8] } \
+{sim:/toptb/UUT/\spi.n4_adj_333 } \
+{sim:/toptb/UUT/\spi.readWord[9] } \
+{sim:/toptb/UUT/\spi.readWord_15__N_44[6] } \
+{sim:/toptb/UUT/\spi.readWord_15__N_44[7] } \
+{sim:/toptb/UUT/\spi.n1_adj_330 } \
+{sim:/toptb/UUT/\spi.readWord[6] } \
+{sim:/toptb/UUT/\spi.n4_adj_331 } \
+{sim:/toptb/UUT/\spi.readWord[7] } \
+{sim:/toptb/UUT/\spi.readWord_15__N_44[4] } \
+{sim:/toptb/UUT/\spi.readWord_15__N_44[5] } \
+{sim:/toptb/UUT/\spi.n1_adj_328 } \
+{sim:/toptb/UUT/\spi.readWord[4] } \
+{sim:/toptb/UUT/\spi.n4_adj_329 } \
+{sim:/toptb/UUT/\spi.readWord[5] } \
+{sim:/toptb/UUT/\spi.readWord_15__N_44[2] } \
+{sim:/toptb/UUT/\spi.readWord_15__N_44[3] } \
+{sim:/toptb/UUT/\spi.n1 } \
+{sim:/toptb/UUT/\spi.readWord[2] } \
+{sim:/toptb/UUT/\spi.n4_adj_326 } \
+{sim:/toptb/UUT/\spi.readWord[3] } \
+{sim:/toptb/UUT/\spi.readWord_15__N_44[0] } \
+{sim:/toptb/UUT/\spi.readWord_15__N_44[1] } \
+{sim:/toptb/UUT/\spi.readWord[0] } \
+sim:/toptb/UUT/spiState_c_0 \
+{sim:/toptb/UUT/\spi.next_16__N_106 } \
+{sim:/toptb/UUT/\spi.n4_adj_325 } \
+{sim:/toptb/UUT/\spi.readWord[1] } \
+{sim:/toptb/UUT/\spi.bitCount_7__N_36[6] } \
+{sim:/toptb/UUT/\spi.bitCount_7__N_36[7] } \
+{sim:/toptb/UUT/\spi.n362 } \
+{sim:/toptb/UUT/\spi.n892 } \
+{sim:/toptb/UUT/\spi.bitCount_7__N_36[4] } \
+{sim:/toptb/UUT/\spi.bitCount_7__N_36[5] } \
+{sim:/toptb/UUT/\spi.bitCount_7__N_36[0] } \
+{sim:/toptb/UUT/\spi.bitCount_7__N_36[2] } \
+{sim:/toptb/UUT/\spi.next_16__N_128$n2 } \
+{sim:/toptb/UUT/\spi.next_16__N_125$n0 } \
+{sim:/toptb/UUT/\spi.state[16] } \
+{sim:/toptb/UUT/\spi.next_16__N_121 } \
+{sim:/toptb/UUT/\spi.state[15] } \
+sim:/toptb/UUT/spiState_c_4 \
+{sim:/toptb/UUT/\spi.next[14] } \
+{sim:/toptb/UUT/\spi.next_16__N_92 } \
+{sim:/toptb/UUT/\spi.next_16__N_101 } \
+{sim:/toptb/UUT/\spi.next_16__N_122 } \
+{sim:/toptb/UUT/\spi.next_16__N_95 } \
+{sim:/toptb/UUT/\spi.state[10] } \
+sim:/toptb/UUT/spiState_c_1 \
+{sim:/toptb/UUT/\spi.state[14] } \
+{sim:/toptb/UUT/\spi.next[12] } \
+{sim:/toptb/UUT/\spi.next[13] } \
+{sim:/toptb/UUT/\spi.n2388 } \
+{sim:/toptb/UUT/\spi.n30 } \
+{sim:/toptb/UUT/\spi.state[13] } \
+{sim:/toptb/UUT/\spi.state[12] } \
+{sim:/toptb/UUT/\spi.next_16__N_134$n1 } \
+{sim:/toptb/UUT/\spi.next[10] } \
+{sim:/toptb/UUT/\spi.state[7] } \
+{sim:/toptb/UUT/\spi.next_16__N_130 } \
+sim:/toptb/UUT/dbgledb_c \
+{sim:/toptb/UUT/\spi.state[9] } \
+{sim:/toptb/UUT/\spi.next[7] } \
+{sim:/toptb/UUT/\spi.next[8] } \
+{sim:/toptb/UUT/\spi.next_16__N_110 } \
+{sim:/toptb/UUT/\spi.n15 } \
+{sim:/toptb/UUT/\spi.n6_adj_323 } \
+{sim:/toptb/UUT/\spi.next_16__N_137 } \
+{sim:/toptb/UUT/\spi.state[8] } \
+{sim:/toptb/UUT/\spi.next[5] } \
+{sim:/toptb/UUT/\spi.next[6] } \
+{sim:/toptb/UUT/\spi.n29 } \
+{sim:/toptb/UUT/\spi.next_16__N_116 } \
+{sim:/toptb/UUT/\spi.n98 } \
+{sim:/toptb/UUT/\spi.n106 } \
+{sim:/toptb/UUT/\spi.next_16__N_115 } \
+{sim:/toptb/UUT/\spi.n6 } \
+{sim:/toptb/UUT/\spi.state[5] } \
+{sim:/toptb/UUT/\spi.state[6] } \
+{sim:/toptb/UUT/\spi.next[0]_2 } \
+{sim:/toptb/UUT/\spi.next[1] } \
+{sim:/toptb/UUT/\spi.n2414 } \
+{sim:/toptb/UUT/\spi.n2252 } \
+{sim:/toptb/UUT/\spi.n104 } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[30] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[31] } \
+{sim:/toptb/UUT/\spi.spiInWord[30] } \
+{sim:/toptb/UUT/\spi.spiInWord[29] } \
+{sim:/toptb/UUT/\spi.spiInWord[31] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[28] } \
+{sim:/toptb/UUT/\spi.spiInWord_31__N_60[29] } \
+{sim:/toptb/UUT/\spi.spiInWord[28] } \
+{sim:/toptb/UUT/\pwm.next[1] } \
+{sim:/toptb/UUT/\next_adj_340[0] } \
+sim:/toptb/UUT/n10 \
+{sim:/toptb/UUT/\state[0] } \
+{sim:/toptb/UUT/\state[2] } \
+{sim:/toptb/UUT/\state[1] } \
+{sim:/toptb/UUT/\counter_3__N_303[2] } \
+{sim:/toptb/UUT/\counter_3__N_303[3] } \
+{sim:/toptb/UUT/\pwm_counter[2] } \
+{sim:/toptb/UUT/\spi.n2446 } \
+sim:/toptb/UUT/n1440 \
+{sim:/toptb/UUT/\pwm_counter[3] } \
+{sim:/toptb/UUT/\spi.n1445 } \
+{sim:/toptb/UUT/\counter_3__N_303[0] } \
+{sim:/toptb/UUT/\counter_3__N_303[1] } \
+{sim:/toptb/UUT/\pwm_counter[0] } \
+{sim:/toptb/UUT/\pwm_counter[1] } \
+{sim:/toptb/UUT/\spi.next_16__N_125 } \
+{sim:/toptb/UUT/\spi.n12 } \
+{sim:/toptb/UUT/\spi.n22 } \
+{sim:/toptb/UUT/\spi.n1601 } \
+{sim:/toptb/UUT/\spi.n945 } \
+{sim:/toptb/UUT/\spi.n959 } \
+{sim:/toptb/UUT/\spi.n962 } \
+{sim:/toptb/UUT/\spi.next_16__N_112 } \
+{sim:/toptb/UUT/\spi.n968 } \
+{sim:/toptb/UUT/\spi.n965 } \
+{sim:/toptb/UUT/\spi.next_16__N_134 } \
+{sim:/toptb/UUT/\spi.n26 } \
+{sim:/toptb/UUT/\spi.next_16__N_107 } \
+{sim:/toptb/UUT/\spi.next_16__N_136 } \
+{sim:/toptb/UUT/\spi.n955 } \
+{sim:/toptb/UUT/\spi.n8 } \
+{sim:/toptb/UUT/\spi.n14 } \
+{sim:/toptb/UUT/\spi.n9 } \
+{sim:/toptb/UUT/\spi.n6_adj_322 } \
+{sim:/toptb/UUT/\spi.n2260 } \
+{sim:/toptb/UUT/\spi.next_16__N_257[8] } \
+{sim:/toptb/UUT/\spi.n14_adj_324 } \
+{sim:/toptb/UUT/\spi.n13 } \
+{sim:/toptb/UUT/\spi.n2281 } \
+{sim:/toptb/UUT/\spi.n18 } \
+{sim:/toptb/UUT/\spi.n24 } \
+{sim:/toptb/UUT/\spi.readWord_15__N_44[14] } \
+sim:/toptb/UUT/readWordHighFour_0_2 \
+{sim:/toptb/UUT/\spi.n1_adj_338 } \
+sim:/toptb/UUT/pwm_out_c \
+{sim:/toptb/UUT/\spiclk_c.sig_001.FeedThruLUT } \
+sim:/toptb/UUT/spiclk_c \
+{sim:/toptb/UUT/\spi.bitCount_7__N_36[1] } \
+{sim:/toptb/UUT/\pwm.next_2__N_307 } \
+{sim:/toptb/UUT/\spi.bitCount_7__N_36[3] } \
+{sim:/toptb/UUT/\spi.readMode_N_297 } \
+{sim:/toptb/UUT/\spicsn_c.sig_002.FeedThruLUT } \
+sim:/toptb/UUT/spicsn_c \
+{sim:/toptb/UUT/\spi.readWord_15__N_44[15] } \
+{sim:/toptb/UUT/\spi.n4_adj_339 } \
+sim:/toptb/UUT/readWordHighFour_c \
+sim:/toptb/UUT/GND_net
+run
+# ** Error: $setup( LSR:25405995 ps, posedge CLK:25406009 ps, 423 ps );
+#    Time: 25406009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_59 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1795
+# ** Error: $setup( LSR:25405995 ps, posedge CLK:25406009 ps, 423 ps );
+#    Time: 25406009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_27 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1197
+# ** Error: $setup( LSR:25405995 ps, posedge CLK:25406009 ps, 423 ps );
+#    Time: 25406009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_24 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1112
+# ** Error: $setup( LSR:25405995 ps, posedge CLK:25406009 ps, 423 ps );
+#    Time: 25406009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_22 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1080
+# ** Error: $setup( LSR:25405995 ps, posedge CLK:25406009 ps, 423 ps );
+#    Time: 25406009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_20 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1048
+# ** Error: $setup( LSR:25405995 ps, posedge CLK:25406009 ps, 423 ps );
+#    Time: 25406009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_10 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 871
+# ** Error: $setup( LSR:25405995 ps, posedge CLK:25406009 ps, 423 ps );
+#    Time: 25406009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_8 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 829
+# ** Error: $setup( LSR:25405995 ps, posedge CLK:25406009 ps, 423 ps );
+#    Time: 25406009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_6 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 787
+# ** Error: $setup( LSR:38105995 ps, posedge CLK:38106009 ps, 423 ps );
+#    Time: 38106009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_59 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1795
+# ** Error: $setup( LSR:38105995 ps, posedge CLK:38106009 ps, 423 ps );
+#    Time: 38106009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_27 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1197
+# ** Error: $setup( LSR:38105995 ps, posedge CLK:38106009 ps, 423 ps );
+#    Time: 38106009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_24 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1112
+# ** Error: $setup( LSR:38105995 ps, posedge CLK:38106009 ps, 423 ps );
+#    Time: 38106009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_22 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1080
+# ** Error: $setup( LSR:38105995 ps, posedge CLK:38106009 ps, 423 ps );
+#    Time: 38106009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_20 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1048
+# ** Error: $setup( LSR:38105995 ps, posedge CLK:38106009 ps, 423 ps );
+#    Time: 38106009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_10 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 871
+# ** Error: $setup( LSR:38105995 ps, posedge CLK:38106009 ps, 423 ps );
+#    Time: 38106009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_8 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 829
+# ** Error: $setup( LSR:38105995 ps, posedge CLK:38106009 ps, 423 ps );
+#    Time: 38106009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_6 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 787
+# ** Error: $setup( LSR:50805995 ps, posedge CLK:50806009 ps, 423 ps );
+#    Time: 50806009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_59 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1795
+# ** Error: $setup( LSR:50805995 ps, posedge CLK:50806009 ps, 423 ps );
+#    Time: 50806009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_27 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1197
+# ** Error: $setup( LSR:50805995 ps, posedge CLK:50806009 ps, 423 ps );
+#    Time: 50806009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_24 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1112
+# ** Error: $setup( LSR:50805995 ps, posedge CLK:50806009 ps, 423 ps );
+#    Time: 50806009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_22 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1080
+# ** Error: $setup( LSR:50805995 ps, posedge CLK:50806009 ps, 423 ps );
+#    Time: 50806009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_20 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 1048
+# ** Error: $setup( LSR:50805995 ps, posedge CLK:50806009 ps, 423 ps );
+#    Time: 50806009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_10 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 871
+# ** Error: $setup( LSR:50805995 ps, posedge CLK:50806009 ps, 423 ps );
+#    Time: 50806009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_8 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 829
+# ** Error: $setup( LSR:50805995 ps, posedge CLK:50806009 ps, 423 ps );
+#    Time: 50806009 ps  Iteration: 1  Process: /toptb/UUT/\spi.SLICE_6 /#Setuphold# File: E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo Line: 787
+# ** Note: $stop    : E:/verilog/NRFICE04/testbench.v(194)
+#    Time: 500 us  Iteration: 0  Instance: /toptb
+# Break in Module toptb at E:/verilog/NRFICE04/testbench.v line 194
+# End time: 17:33:56 on Feb 06,2023, Elapsed time: 0:10:07
+# Errors: 24, Warnings: 8

@@ -1,0 +1,1 @@
+E:/lscc/radiant/2022.1/bin/nt64/moduleparser.exe -PROJ sim -pf E:/lscc/radiant/2022.1/cae_library/synthesis/vhdl/iCE40UP.vhd -pf E:/lscc/radiant/2022.1/cae_library/synthesis/verilog/iCE40UP.v -lib iCE40UP -lst E:/verilog/NRFICE04/sim/source_files.lst

@@ -1,0 +1,361 @@
+{
+   "modules": {
+      "clockstretch": {
+         "codeBlock": ["assign clockOut = clockOutReg;"],
+         "defaultState": "Counting",
+         "name": "clockstretch",
+         "parameters": ["newParameter|1|1'b0"],
+         "registers": [
+            "clockCount|8|clockCount[7:0]|8'b0|false|false|nocomment",
+            "clockOutReg|1|clockOutReg|1'b0|false|false|nocomment"
+         ],
+         "states": {
+            "Counting": {
+               "clockState": "Counting",
+               "name": "Counting",
+               "orderIndex": "0",
+               "outputs": ["clockCount|clockCount <= clockCount + 1'b1"],
+               "stateTransitions": ["gotoInterim|clockCount == 8'hf|Interim"]
+            },
+            "Interim": {
+               "clockState": "Reset",
+               "name": "Interim",
+               "orderIndex": "1",
+               "outputs": [],
+               "stateTransitions": []
+            },
+            "Reset": {
+               "clockState": "Counting",
+               "name": "Reset",
+               "orderIndex": "2",
+               "outputs": [
+                  "clockOutReg|clockOutReg <= ~clockOutReg",
+                  "clockCount|clockCount <= 8'b0"
+               ],
+               "stateTransitions": []
+            }
+         },
+         "wires": [
+            "clock|1|1'b0|false|true|false|main clock in",
+            "reset|1|1'b0|false|true|false|nocomment",
+            "clockOut|1|1'b0|false|false|true|nocomment"
+         ]
+      },
+      "pwm": {
+         "codeBlock": ["// hopefully no code block"],
+         "defaultState": "Idle",
+         "name": "pwm",
+         "parameters": ["newParameter|1|1'b1"],
+         "registers": [
+            "onTime|@ontimeBits@|onTime|@ontimeBits@'b0|false|false|copy of the ebr value",
+            "pwmOut|1|pwmOut|1'b0|false|true|single pwm output"
+         ],
+         "states": {
+            "Configure": {
+               "clockState": "ConfigRam1",
+               "name": "Configure",
+               "orderIndex": "1",
+               "outputs": [],
+               "stateTransitions": []
+            },
+            "Idle": {
+               "clockState": "Idle",
+               "name": "Idle",
+               "orderIndex": "0",
+               "outputs": [],
+               "stateTransitions": ["gotoConfigure|counter >= @ontimeBits@'hefff && ramSafe == 1'b1|Configure"]
+            },
+            "ConfigRam1": {
+               "clockState": "ConfigRam2",
+               "name": "ConfigRam1",
+               "orderIndex": "2",
+               "outputs": [],
+               "stateTransitions": []
+            },
+            "ConfigRam2": {
+               "clockState": "ConfigRam3",
+               "name": "ConfigRam2",
+               "orderIndex": "3",
+               "outputs": [],
+               "stateTransitions": []
+            },
+            "ConfigRam3": {
+               "clockState": "Idle",
+               "name": "ConfigRam3",
+               "orderIndex": "4",
+               "outputs": [],
+               "stateTransitions": []
+            }
+         },
+         "wires": [
+            "clock|1|1'b0|false|true|false|main clock in",
+            "reset|1|1'b0|false|true|false|nocomment",
+            "ramSafe|1|1'b0|false|true|false|nocomment",
+            "counter|@ontimeBits@|@ontimeBits@'b0|false|true|false|nocomment"
+         ]
+      },
+      "spi": {
+         "codeBlock": [
+            "assign ramCLK = ramCLKReg;",
+            "assign ramWriteEn = ramWriteEnReg;",
+            "assign ramAddr[7:0] = readMode == 1'b0 ? spiInWord[23:16] : spiInWord[8:1];",
+            "assign ramWriteData[15:0] = spiInWord[15:0];",
+            "assign miso = readWord[15];",
+            "assign stateDebug[19:0] = state[19:0];",
+            "assign debug4[3:0] = spiInWord[3:0];",
+            "assign ramCLKEn = ramCLKEnReg;"
+         ],
+         "defaultState": "CSNHigh",
+         "name": "spi",
+         "parameters": ["newParameter|1|1'b0"],
+         "registers": [
+            "spiInWord|32|spiInWord[31:0]|32'b0|false|false|nocomment",
+            "bitCount|8|bitCount[7:0]|8'b11111111|false|false|nocomment",
+            "clkBuf|1|clkBuf|1'b0|false|false|buffer for wire clk",
+            "mosiBuf|1|mosiBuf|1'b0|false|false|buffer for wire mosi",
+            "csnBuf|1|csnBuf|1'b1|false|false|buffer for wire csn",
+            "ramCLKReg|1|ramCLKReg|1'b0|false|false|reg for ram write clock",
+            "ramCLKEnReg|1|ramCLKEnReg|1'b0|false|false|reg for ram write clock",
+            "ramWriteEnReg|1|ramWriteEnReg|1'b0|false|false|reg for ram write enables",
+            "ramAddrReg|8|ramAddrReg|8'b0|false|false|reg for ram read address",
+            "readMode|1|readMode|1'b0|false|false|reg for readMode",
+            "readWord|16|readWord|16'hf00f|false|false|reg for miso word",
+            "pwmRegs|48|pwmRegs|48'b0|false|true|regs for pwm on times because we are lazy"
+         ],
+         "states": {
+            "CLKHigh": {
+               "clockState": "CLKHigh",
+               "name": "CLKHigh",
+               "orderIndex": "1",
+               "outputs": ["ramAddrReg|ramAddrReg <= spiInWord[8:1]"],
+               "stateTransitions": [
+                  "gotoCLKLow|clkBuf == 1'b0 && readMode == 1'b0|CLKLow",
+                  "gotoCLKHighRead|readMode == 1'b1|CLKHighRead",
+                  "gotoCSNHigh|csnBuf == 1'b1|CSNHigh"
+               ]
+            },
+            "CLKHighRead": {
+               "clockState": "ReadRaiseCLK",
+               "name": "CLKHighRead",
+               "orderIndex": "10",
+               "outputs": [
+                  "ramCLKReg|ramCLKReg <= 1'b0",
+                  "bitCount|bitCount <= 8'b0",
+                  "ramCLKEnReg|ramCLKEnReg <= 1'b1"
+               ],
+               "stateTransitions": []
+            },
+            "CLKHighReadLoop": {
+               "clockState": "CLKHighReadLoop",
+               "name": "CLKHighReadLoop",
+               "orderIndex": "14",
+               "outputs": [],
+               "stateTransitions": ["gotoShiftRead|clkBuf == 1'b0|ShiftRead"]
+            },
+            "CLKLow": {
+               "clockState": "CLKLow",
+               "name": "CLKLow",
+               "orderIndex": "2",
+               "outputs": ["spiInWord|spiInWord[0] <= mosiBuf"],
+               "stateTransitions": [
+                  "gotoLatchBit|clkBuf == 1'b1|Shift",
+                  "gotoCSNHigh|csnBuf == 1'b1|CSNHigh"
+               ]
+            },
+            "CLKLowRead": {
+               "clockState": "CLKLowRead",
+               "name": "CLKLowRead",
+               "orderIndex": "12",
+               "outputs": [],
+               "stateTransitions": [
+                  "gotoCLKHighRead|clkBuf == 1'b1|CLKHighReadLoop",
+                  "gotoCSNLow|bitCount[7:0] == 8'h10|CSNLow",
+                  "gotoCSNHigh|csnBuf == 1'b1|CSNHigh"
+               ]
+            },
+            "CSNHigh": {
+               "clockState": "CSNHigh",
+               "name": "CSNHigh",
+               "orderIndex": "0",
+               "outputs": [
+                  "spiInWord|spiInWord <= 32'b0",
+                  "bitCount|bitCount <= 8'b0",
+                  "ramAddrReg|ramAddrReg <= 8'b0",
+                  "ramCLKReg|ramCLKReg <= 1'b0",
+                  "ramCLKEnReg|ramCLKEnReg <= 1'b0",
+                  "ramWriteEnReg|ramWriteEnReg <= 1'b0",
+                  "readMode|readMode <= 1'b0",
+                  "readWord|readWord <= 16'hffff"
+               ],
+               "stateTransitions": ["gotoCLKHigh|csnBuf == 1'b0|CLKHigh"]
+            },
+            "CSNLow": {
+               "clockState": "CSNLow",
+               "name": "CSNLow",
+               "orderIndex": "8",
+               "outputs": [
+                  "ramWriteEnReg|ramWriteEnReg <= 1'b0",
+                  "ramCLKEnReg|ramCLKEnReg <= 1'b0",
+                  "ramCLKReg|ramCLKReg <= 1'b0"
+               ],
+               "stateTransitions": ["gotoCSNHigh|csnBuf == 1'b1|CSNHigh"]
+            },
+            "Command": {
+               "clockState": "Command",
+               "name": "Command",
+               "orderIndex": "6",
+               "outputs": [],
+               "stateTransitions": [
+                  "gotoWriteRam|spiInWord[31:24] == 8'h10|WriteRam",
+                  "gotoWritePWMReg0|spiInWord[31:24] == 8'h12|WritePWMReg0",
+                  "gotoWritePWMReg1|spiInWord[31:24] == 8'h13|WritePWMReg1",
+                  "gotoWritePWMReg2|spiInWord[31:24] == 8'h14|WritePWMReg2",
+                  "gotoCSNLow|spiInWord[31:24] != 8'h10 && spiInWord[31:24] != 8'h11 && spiInWord[31:24] != 8'h12 && spiInWord[31:24] != 8'h13 && spiInWord[31:24] != 8'h14 && clkBuf == 1'b1|CSNLow",
+                  "gotoCSNHigh|csnBuf == 1'b1 && spiInWord[31:24] != 8'h10|CSNHigh"
+               ]
+            },
+            "LastBit": {
+               "clockState": "LastBit",
+               "name": "LastBit",
+               "orderIndex": "5",
+               "outputs": ["spiInWord|spiInWord[0] <= mosiBuf"],
+               "stateTransitions": ["gotoCommand|clkBuf == 1'b0|Command"]
+            },
+            "LastBitCLKHigh": {
+               "clockState": "LastBitCLKHigh",
+               "name": "LastBitCLKHigh",
+               "orderIndex": "18",
+               "outputs": [],
+               "stateTransitions": ["gotoLastBitCLKLow|clkBuf == 1'b0|LastBitCLKLow"]
+            },
+            "LastBitCLKLow": {
+               "clockState": "LastBitCLKLow",
+               "name": "LastBitCLKLow",
+               "orderIndex": "19",
+               "outputs": [],
+               "stateTransitions": ["gotoLastBit|clkBuf == 1'b1|LastBit"]
+            },
+            "LatchBit": {
+               "clockState": "CLKHigh",
+               "name": "LatchBit",
+               "orderIndex": "4",
+               "outputs": ["readMode|readMode <= (bitCount[7:0] == 8'h10 && spiInWord[16:9] == 8'h11) ? 1'b1 :  readMode"],
+               "stateTransitions": ["gotoLastBitCLKHigh|bitCount == 8'h1F|LastBitCLKHigh"]
+            },
+            "LatchReadWord": {
+               "clockState": "LatchReadWord",
+               "name": "LatchReadWord",
+               "orderIndex": "11",
+               "outputs": ["readWord|readWord[15:0] <= ramReadData[15:0]"],
+               "stateTransitions": ["gotoCLKLowRead|clkBuf == 1'b0|CLKLowRead"]
+            },
+            "ReadLowerCLK": {
+               "clockState": "ReadRaiseCLK2",
+               "name": "ReadLowerCLK",
+               "orderIndex": "16",
+               "outputs": ["ramCLKReg|ramCLKReg <= 1'b0"],
+               "stateTransitions": []
+            },
+            "ReadRaiseCLK": {
+               "clockState": "ReadLowerCLK",
+               "name": "ReadRaiseCLK",
+               "orderIndex": "15",
+               "outputs": ["ramCLKReg|ramCLKReg <= 1'b1"],
+               "stateTransitions": []
+            },
+            "ReadRaiseCLK2": {
+               "clockState": "LatchReadWord",
+               "name": "ReadRaiseCLK2",
+               "orderIndex": "17",
+               "outputs": ["ramCLKReg|ramCLKReg <= 1'b1"],
+               "stateTransitions": []
+            },
+            "Shift": {
+               "clockState": "LatchBit",
+               "name": "Shift",
+               "orderIndex": "3",
+               "outputs": [
+                  "spiInWord|spiInWord <= spiInWord << 1",
+                  "bitCount|bitCount <= bitCount + 1'b1"
+               ],
+               "stateTransitions": []
+            },
+            "ShiftRead": {
+               "clockState": "CLKLowRead",
+               "name": "ShiftRead",
+               "orderIndex": "13",
+               "outputs": [
+                  "readWord|readWord <= readWord << 1",
+                  "bitCount|bitCount <= bitCount + 1'b1"
+               ],
+               "stateTransitions": []
+            },
+            "WriteRam": {
+               "clockState": "WriteRamStore",
+               "name": "WriteRam",
+               "orderIndex": "7",
+               "outputs": [
+                  "ramCLKReg|ramCLKReg <= 1'b0",
+                  "ramCLKEnReg|ramCLKEnReg <= 1'b1",
+                  "ramWriteEnReg|ramWriteEnReg <= 1'b1"
+               ],
+               "stateTransitions": []
+            },
+            "WritePWMReg0": {
+               "clockState": "CSNLow",
+               "name": "WritePWMReg0",
+               "orderIndex": "20",
+               "outputs": [
+                  "pwmRegs|pwmRegs[15:0] <= spiInWord[15:0]"
+               ],
+               "stateTransitions": []
+            },
+            "WritePWMReg1": {
+               "clockState": "CSNLow",
+               "name": "WritePWMReg1",
+               "orderIndex": "21",
+               "outputs": [
+                 "pwmRegs|pwmRegs[31:16] <= spiInWord[15:0]"
+               ],
+               "stateTransitions": []
+            },
+            "WritePWMReg2": {
+               "clockState": "CSNLow",
+               "name": "WritePWMReg2",
+               "orderIndex": "22",
+               "outputs": [
+                   "pwmRegs|pwmRegs[47:32] <= spiInWord[15:0]"
+               ],
+               "stateTransitions": []
+            },
+            "WriteRamStore": {
+               "clockState": "CSNLow",
+               "name": "WriteRamStore",
+               "orderIndex": "9",
+               "outputs": ["ramCLKReg|ramCLKReg <= 1'b1"],
+               "stateTransitions": []
+            }
+         },
+         "wires": [
+            "csn|1|1'b0|true|true|false|nocomment",
+            "clock|1|1'b0|false|true|false|main clock in",
+            "reset|1|1'b0|false|true|false|nocomment",
+            "mosi|1|1'b0|true|true|false|nocomment",
+            "clk|1|1'b0|true|true|false|nocomment",
+            "miso|1|1'b0|false|false|true|nocomment",
+            "ramAddr|8|8'b0|false|false|true|nocomment",
+            "ramReadData|16|16'b0|false|true|false|nocomment",
+            "ramWriteData|16|16'b0|false|false|true|nocomment",
+            "ramCLKEn|1|1'b0|false|false|true|nocomment",
+            "ramCLK|1|1'b0|false|false|true|nocomment",
+            "ramWriteEn|1|1'b0|false|false|true|nocomment",
+            "stateDebug|20|20'b0|false|false|true|nocomment",
+            "debug4|4|4'b0|false|false|true|nocomment"
+         ]
+      }
+   },
+   "variables": [
+      "ontimeBits|16",
+      "extraModules|ebr8x16"
+   ]
+}

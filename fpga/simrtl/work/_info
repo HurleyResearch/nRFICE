@@ -1,0 +1,252 @@
+m255
+K4
+z2
+!s11f vlog 2021.4 2021.10, Oct 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/verilog/NRFICE04/simrtl
+vebr8x16
+!s125 LATTICE_CONN
+Z1 !s110 1675647866
+!i10b 1
+!s100 ACI9m0bn0G8m<Hf^8UnUY3
+IHiCI7[LQPaMY>j;EAhUA;1
+R0
+Z2 w1675632597
+Z3 8E:/verilog/NRFICE04/ebr8x16/rtl/ebr8x16.v
+Z4 FE:/verilog/NRFICE04/ebr8x16/rtl/ebr8x16.v
+!i122 2
+L0 11 171
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OT;L;2021.4;73
+r1
+!s85 0
+31
+Z7 !s108 1675647866.000000
+Z8 !s107 E:/verilog/NRFICE04/ebr8x16/rtl/ebr8x16.v|
+Z9 !s90 -reportprogress|300|+incdir+"E:/verilog/NRFICE04/ebr8x16/rtl"|-work|work|E:/verilog/NRFICE04/ebr8x16/rtl/ebr8x16.v|
+!s101 -O0
+!i113 1
+Z10 o-work work -O0
+Z11 !s92 +incdir+\"E:/verilog/NRFICE04/ebr8x16/rtl\" -work work -O0
+Z12 tCvgOpt 0
+vebr8x16_ipgen_lscc_ram_dq
+R1
+!i10b 1
+!s100 8lnG[MP]0GgT:>;HjWZ8i0
+I;R>^<n2^ghZz0P6O6^0FL0
+R0
+R2
+R3
+R4
+!i122 2
+L0 237 338
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+R11
+R12
+vebr8x16_ipgen_lscc_ram_dq_core
+Z13 !s110 1675647867
+!i10b 1
+!s100 H1V>i1^5DUW>Bl>zmBj_o1
+IL?mgEhKKD@WNPkP93o2o=1
+R0
+R2
+R3
+R4
+!i122 2
+L0 2287 2773
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+R11
+R12
+vebr8x16_ipgen_lscc_ram_dq_inst
+R13
+!i10b 1
+!s100 NE_DE4^]ezzh9Of;Bem<21
+I=OfW@zlJ5XV;mM[nH^eHU3
+R0
+R2
+R3
+R4
+!i122 2
+L0 1124 1107
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+R11
+R12
+vebr8x16_ipgen_lscc_ram_dq_main
+R1
+!i10b 1
+!s100 hTgEiPacZZX]O2jU9?a0W0
+I^0R5`]15`CQdmhTXSSzPE0
+R0
+R2
+R3
+R4
+!i122 2
+L0 630 377
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+R11
+R12
+vebr8x16_ipgen_lscc_write_through
+R1
+!i10b 1
+!s100 AoZda_2YhA2RQegE:f2[?0
+IXjL]7U_CfFJjmmPB@9?Vj1
+R0
+R2
+R3
+R4
+!i122 2
+L0 1010 59
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+R11
+R12
+vpwm
+R1
+!i10b 1
+!s100 Y1RlVhTTdLJOW=gLY6hZc2
+Ih=RCVAnLOeo4^cl9dkG?60
+R0
+w1675644935
+8E:/verilog/NRFICE04/pwm.v
+FE:/verilog/NRFICE04/pwm.v
+!i122 0
+L0 2 137
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 E:/verilog/NRFICE04/pwm.v|
+!s90 -reportprogress|300|+incdir+"E:/verilog/NRFICE04"|-work|work|E:/verilog/NRFICE04/pwm.v|
+!s101 -O0
+!i113 1
+R10
+Z14 !s92 +incdir+\"E:/verilog/NRFICE04\" -work work -O0
+R12
+vspi
+R1
+!i10b 1
+!s100 IACME7L]>?ZgKXdEWLAFb3
+IISB?VYV7difbC]fjcbN=n0
+R0
+w1675644937
+8E:/verilog/NRFICE04/spi.v
+FE:/verilog/NRFICE04/spi.v
+!i122 1
+L0 2 358
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 E:/verilog/NRFICE04/spi.v|
+!s90 -reportprogress|300|+incdir+"E:/verilog/NRFICE04"|-work|work|E:/verilog/NRFICE04/spi.v|
+!s101 -O0
+!i113 1
+R10
+R14
+R12
+vtop
+R13
+!i10b 1
+!s100 eG@:99Fli@<`:B3gDiRn:3
+IRPeMYnKQ:L_l2eP9K?Ji92
+R0
+Z15 w1675644933
+8E:/verilog/NRFICE04/top.v
+FE:/verilog/NRFICE04/top.v
+!i122 3
+L0 6 189
+R5
+R6
+r1
+!s85 0
+31
+Z16 !s108 1675647867.000000
+!s107 E:/verilog/NRFICE04/top.v|
+!s90 -reportprogress|300|+incdir+"E:/verilog/NRFICE04"|-work|work|E:/verilog/NRFICE04/top.v|
+!s101 -O0
+!i113 1
+R10
+R14
+R12
+vtoptb
+R13
+!i10b 1
+!s100 [:La^IfI3IBl6WMKCBkXi3
+Il5[OWIN@O3W8lE]2;HTid3
+R0
+R15
+8E:/verilog/NRFICE04/testbench.v
+FE:/verilog/NRFICE04/testbench.v
+!i122 4
+L0 4 187
+R5
+R6
+r1
+!s85 0
+31
+R16
+!s107 E:/verilog/NRFICE04/testbench.v|
+!s90 -reportprogress|300|+incdir+"E:/verilog/NRFICE04"|-work|work|E:/verilog/NRFICE04/testbench.v|
+!s101 -O0
+!i113 1
+R10
+R14
+R12

@@ -1,0 +1,7 @@
+-ver "E:/lscc/radiant/2022.1/ip/pmi/pmi_iCE40UP.v"
+-lib pmi -vhd "E:/lscc/radiant/2022.1/ip/pmi/pmi_iCE40UP.vhd"
+-ver "E:/verilog/NRFICE04/ebr8x16/rtl/ebr8x16.v"
+-sdc "E:/verilog/NRFICE04/ebr8x16/constraints/ebr8x16.ldc"
+-path "E:/verilog/NRFICE04/ebr8x16" "E:/verilog/NRFICE04"
+-top ebr8x16
+-a "iCE40UP"

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/faroth/hurley/android/NRFICE/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.339" />
+        <entry key="..\:/faroth/hurley/android/NRFICE/app/src/main/res/drawable/ic_launcher_background.xml" value="0.339" />
+        <entry key="..\:/faroth/hurley/android/NRFICE/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.1605" />
+        <entry key="..\:/faroth/hurley/android/NRFICE/app/src/main/res/drawable/rectangle_white_border.xml" value="0.232" />
+        <entry key="..\:/faroth/hurley/android/NRFICE/app/src/main/res/drawable/side_nav_bar.xml" value="0.156" />
+        <entry key="..\:/faroth/hurley/android/NRFICE/app/src/main/res/layout/activity_main.xml" value="0.286231884057971" />
+        <entry key="..\:/faroth/hurley/android/NRFICE/app/src/main/res/layout/app_bar_main.xml" value="0.30210016155088854" />
+        <entry key="..\:/faroth/hurley/android/NRFICE/app/src/main/res/layout/content_main.xml" value="0.25815217391304346" />
+        <entry key="..\:/faroth/hurley/android/NRFICE/app/src/main/res/layout/fragment_home.xml" value="0.17604166666666668" />
+        <entry key="..\:/faroth/hurley/android/NRFICE/app/src/main/res/layout/fragment_rgb.xml" value="0.14791666666666667" />
+        <entry key="..\:/faroth/hurley/android/NRFICE/app/src/main/res/layout/fragment_slideshow.xml" value="0.16197916666666667" />
+        <entry key="..\:/faroth/hurley/android/NRFICE/app/src/main/res/layout/nav_header_main.xml" value="0.17604166666666668" />
+        <entry key="..\:/faroth/hurley/android/NRFICE/app/src/main/res/menu/activity_main_drawer.xml" value="0.3546875" />
+        <entry key="..\:/faroth/hurley/android/NRFICE/app/src/main/res/menu/main.xml" value="0.3546875" />
+        <entry key="..\:/faroth/hurley/android/NRFICE/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.232" />
+        <entry key="..\:/faroth/hurley/android/NRFICE/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.104" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

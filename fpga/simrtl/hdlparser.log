@@ -1,0 +1,148 @@
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/standard.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/standard.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/std_1164.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/std_1164.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/mgc_qsim.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/mgc_qsim.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/numeric_bit.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/numeric_bit.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/numeric_std.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/numeric_std.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/textio.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/textio.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/std_logic_textio.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/std_logic_textio.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_attr.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_attr.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_misc.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_misc.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/math_real.vhd' (VHDL-1481)
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/mixed_lang_vltype.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/mixed_lang_vltype.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_arit.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_arit.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_sign.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_sign.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_unsi.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_unsi.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/synattr.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/synattr.vhd
+-- Analyzing Verilog file 'E:/lscc/radiant/2022.1/cae_library/synthesis/verilog/iCE40UP.v' (VERI-1482)
+-- Analyzing Verilog file 'E:/verilog/NRFICE04/pwm.v' (VERI-1482)
+-- Analyzing Verilog file 'E:/verilog/NRFICE04/spi.v' (VERI-1482)
+-- Analyzing Verilog file 'E:/verilog/NRFICE04/top.v' (VERI-1482)
+-- Analyzing Verilog file 'E:/verilog/NRFICE04/testbench.v' (VERI-1482)
+-- Analyzing Verilog file 'E:/verilog/NRFICE04/simram.v' (VERI-1482)
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/cae_library/synthesis/vhdl/iCE40UP.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/cae_library/synthesis/vhdl/iCE40UP.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/standard.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/standard.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/std_1164.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/std_1164.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/mgc_qsim.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/mgc_qsim.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/numeric_bit.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/numeric_bit.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/numeric_std.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/numeric_std.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/textio.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/textio.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/std_logic_textio.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/std_logic_textio.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_attr.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_attr.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_misc.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_misc.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/math_real.vhd' (VHDL-1481)
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/mixed_lang_vltype.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/mixed_lang_vltype.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_arit.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_arit.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_sign.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_sign.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_unsi.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_unsi.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/synattr.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/synattr.vhd
+-- Analyzing Verilog file 'E:/lscc/radiant/2022.1/cae_library/synthesis/verilog/iCE40UP.v' (VERI-1482)
+-- Analyzing Verilog file 'E:/verilog/NRFICE04/pwm.v' (VERI-1482)
+-- Analyzing Verilog file 'E:/verilog/NRFICE04/spi.v' (VERI-1482)
+-- Analyzing Verilog file 'E:/verilog/NRFICE04/top.v' (VERI-1482)
+-- Analyzing Verilog file 'E:/verilog/NRFICE04/testbench.v' (VERI-1482)
+-- Analyzing Verilog file 'E:/verilog/NRFICE04/ebr8x16/rtl/ebr8x16.v' (VERI-1482)
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/cae_library/synthesis/vhdl/iCE40UP.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/cae_library/synthesis/vhdl/iCE40UP.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/standard.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/standard.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/std_1164.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/std_1164.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/mgc_qsim.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/mgc_qsim.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/numeric_bit.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/numeric_bit.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/numeric_std.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/numeric_std.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/textio.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/textio.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/std_logic_textio.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/std_logic_textio.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_attr.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_attr.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_misc.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_misc.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/math_real.vhd' (VHDL-1481)
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/mixed_lang_vltype.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/mixed_lang_vltype.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_arit.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_arit.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_sign.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_sign.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_unsi.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_unsi.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/synattr.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/synattr.vhd
+-- Analyzing Verilog file 'E:/lscc/radiant/2022.1/cae_library/synthesis/verilog/iCE40UP.v' (VERI-1482)
+-- Analyzing Verilog file 'E:/verilog/NRFICE04/pwm.v' (VERI-1482)
+-- Analyzing Verilog file 'E:/verilog/NRFICE04/spi.v' (VERI-1482)
+-- Analyzing Verilog file 'E:/verilog/NRFICE04/top.v' (VERI-1482)
+-- Analyzing Verilog file 'E:/verilog/NRFICE04/testbench.v' (VERI-1482)
+-- Analyzing Verilog file 'E:/verilog/NRFICE04/ebr8x16/rtl/ebr8x16.v' (VERI-1482)
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/cae_library/synthesis/vhdl/iCE40UP.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/cae_library/synthesis/vhdl/iCE40UP.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/standard.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/standard.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/std_1164.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/std_1164.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/mgc_qsim.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/mgc_qsim.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/numeric_bit.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/numeric_bit.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/numeric_std.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/numeric_std.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/textio.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/textio.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/std_logic_textio.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/std_logic_textio.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_attr.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_attr.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_misc.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_misc.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/math_real.vhd' (VHDL-1481)
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/mixed_lang_vltype.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/mixed_lang_vltype.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_arit.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_arit.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_sign.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_sign.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_unsi.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/syn_unsi.vhd
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/synattr.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/ispfpga/vhdl_packages/synattr.vhd
+-- Analyzing Verilog file 'E:/lscc/radiant/2022.1/cae_library/synthesis/verilog/iCE40UP.v' (VERI-1482)
+-- Analyzing Verilog file 'E:/verilog/NRFICE04/pwm.v' (VERI-1482)
+-- Analyzing Verilog file 'E:/verilog/NRFICE04/spi.v' (VERI-1482)
+-- Analyzing Verilog file 'E:/verilog/NRFICE04/top.v' (VERI-1482)
+-- Analyzing Verilog file 'E:/verilog/NRFICE04/testbench.v' (VERI-1482)
+-- Analyzing Verilog file 'E:/verilog/NRFICE04/ebr8x16/rtl/ebr8x16.v' (VERI-1482)
+-- Analyzing VHDL file 'E:/lscc/radiant/2022.1/cae_library/synthesis/vhdl/iCE40UP.vhd' (VHDL-1481)
+-- Analyzing VHDL file E:/lscc/radiant/2022.1/cae_library/synthesis/vhdl/iCE40UP.vhd

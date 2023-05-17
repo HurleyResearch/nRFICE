@@ -1,0 +1,20 @@
+#Start recording tcl command: 2/9/2023 09:35:21
+#Project Location: E:/verilog/NRFICE04; Project name: NRFICE04
+prj_open "E:/verilog/NRFICE04/NRFICE04.rdf"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "E:/verilog/NRFICE04/sim/sim.spf"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "E:/verilog/NRFICE04/sim/sim.spf"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "E:/verilog/NRFICE04/sim/sim.spf"
+prj_add_source "E:/verilog/NRFICE04/xim/xim.spf"
+#Stop recording: 2/9/2023 13:32:47

@@ -1,0 +1,11 @@
+<RadiantSimulationProject path="." simType="ModelSim" version="2.0" stage="2" language="1" name="wim">
+    <Source langstandard="" type="VERILOG" path="impl_1/NRFICE04_impl_1_vo.vo" worklib="" include="none"/>
+    <Source langstandard="Verilog 2001" type="VERILOG" path="testbench.v" worklib="work" include="none"/>
+    <Source langstandard="" type="VERILOG" path="impl_1/NRFICE04_impl_1_vo.sdf" worklib="" include="none"/>
+    <Sdf path="impl_1/NRFICE04_impl_1_vo.sdf"/>
+    <SimLib value="pmi_work ovi_ice40up"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <Udo value=""/>
+    <TopModule language="VERILOG" name="toptb" instance="/UUT"/>
+</RadiantSimulationProject>

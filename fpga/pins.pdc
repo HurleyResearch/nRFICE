@@ -1,0 +1,45 @@
+ldc_set_location -site {35} [get_ports clock_in]
+ldc_set_location -site {10} [get_ports reset_in]
+ldc_set_location -site {47} [get_ports spiclk]
+ldc_set_location -site {9} [get_ports spicsn]
+ldc_set_location -site {3} [get_ports spimosi]
+ldc_set_location -site {46} [get_ports dbgledb]
+ldc_set_location -site {45} [get_ports dbgledg]
+ldc_set_location -site {44} [get_ports dbgledr]
+ldc_set_location -site {32} [get_ports pwm_out]
+
+
+#ldc_set_location -site {13} [get_ports {spiBitCount[0]}]
+#ldc_set_location -site {18} [get_ports {spiBitCount[1]}]
+#ldc_set_location -site {26} [get_ports {spiBitCount[2]}]
+#ldc_set_location -site {12} [get_ports {spiBitCount[3]}]
+
+
+ldc_set_location -site {13} [get_ports {spiDebug4[0]}]
+ldc_set_location -site {18} [get_ports {spiDebug4[1]}]
+ldc_set_location -site {26} [get_ports {spiDebug4[2]}]
+ldc_set_location -site {12} [get_ports {spiDebug4[3]}]
+
+
+
+#ldc_set_location -site {13} [get_ports {ramReadData[0]}]
+#ldc_set_location -site {18} [get_ports {ramReadData[1]}]
+#ldc_set_location -site {26} [get_ports {ramWriteData[0]}]
+#ldc_set_location -site {12} [get_ports {ramWriteData[1]}]
+
+
+#ldc_set_location -site {13} [get_ports spiclk]
+#ldc_set_location -site {18} [get_ports spiclk]
+#ldc_set_location -site {26} [get_ports spiclk]
+#ldc_set_location -site {12} [get_ports spiclk]
+
+
+
+ldc_set_location -site {43} [get_ports {spiState[0]}]
+ldc_set_location -site {42} [get_ports {spiState[1]}]
+ldc_set_location -site {38} [get_ports {spiState[2]}]
+ldc_set_location -site {21} [get_ports {spiState[3]}]
+ldc_set_location -site {23} [get_ports {spiState[4]}]
+
+
+ldc_set_location -site {4} [get_ports spimiso]

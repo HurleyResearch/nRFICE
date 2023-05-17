@@ -1,0 +1,12 @@
+#Start recording tcl command: 2/23/2023 12:32:17
+#Project Location: E:/verilog/NRFICE04; Project name: NRFICE04
+prj_open "E:/verilog/NRFICE04/NRFICE04.rdf"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 2/24/2023 15:28:05

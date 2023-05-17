@@ -1,0 +1,136 @@
+# Reading pref.tcl
+# do E:/verilog/NRFICE04/xim/xim.mdo
+# Loading project xim
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+# Start time: 11:06:54 on Feb 09,2023
+# vlog -reportprogress 300 "+incdir+"E:/verilog/NRFICE04"" -work work E:/verilog/NRFICE04/pwm.v 
+# -- Compiling module pwm
+# 
+# Top level modules:
+# 	pwm
+# End time: 11:06:54 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+# Start time: 11:06:54 on Feb 09,2023
+# vlog -reportprogress 300 "+incdir+"E:/verilog/NRFICE04"" -work work E:/verilog/NRFICE04/spi.v 
+# -- Compiling module spi
+# 
+# Top level modules:
+# 	spi
+# End time: 11:06:54 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+# Start time: 11:06:54 on Feb 09,2023
+# vlog -reportprogress 300 "+incdir+"E:/verilog/NRFICE04/ebr8x16/rtl"" -work work E:/verilog/NRFICE04/ebr8x16/rtl/ebr8x16.v 
+# -- Compiling module ebr8x16
+# -- Compiling module ebr8x16_ipgen_lscc_ram_dq
+# -- Compiling module ebr8x16_ipgen_lscc_ram_dq_main
+# -- Compiling module ebr8x16_ipgen_lscc_write_through
+# -- Compiling module ebr8x16_ipgen_lscc_ram_dq_inst
+# -- Compiling module ebr8x16_ipgen_lscc_ram_dq_core
+# 
+# Top level modules:
+# 	ebr8x16
+# End time: 11:06:55 on Feb 09,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+# Start time: 11:06:55 on Feb 09,2023
+# vlog -reportprogress 300 "+incdir+"E:/verilog/NRFICE04"" -work work E:/verilog/NRFICE04/top.v 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 11:06:55 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+# Start time: 11:06:55 on Feb 09,2023
+# vlog -reportprogress 300 "+incdir+"E:/verilog/NRFICE04"" -work work E:/verilog/NRFICE04/testbench.v 
+# -- Compiling module toptb
+# 
+# Top level modules:
+# 	toptb
+# End time: 11:06:55 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -lib work -L pmi_work -L ovi_ice40up toptb 
+# Start time: 11:06:56 on Feb 09,2023
+# //  ModelSim - Lattice FPGA Edition 2021.4 Oct 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim - Lattice FPGA Edition and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.toptb
+# Loading work.top
+# Loading work.ebr8x16
+# Loading work.ebr8x16_ipgen_lscc_ram_dq
+# Loading work.ebr8x16_ipgen_lscc_ram_dq_main
+# Loading work.ebr8x16_ipgen_lscc_write_through
+# Loading work.ebr8x16_ipgen_lscc_ram_dq_inst
+# Loading work.spi
+# Loading work.pwm
+# Loading work.ebr8x16_ipgen_lscc_ram_dq_core
+# Loading ovi_ice40up.PDP4K
+# Loading ovi_ice40up.EBR_B
+# Loading ovi_ice40up.RAM40_4K
+# Loading ovi_ice40up.read_data_decoder
+# Loading ovi_ice40up.write_data_decoder
+# Loading ovi_ice40up.mask_decoder
+# Loading ovi_ice40up.RAM4K
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UUT'.  Expected 13, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /toptb/UUT File: E:/verilog/NRFICE04/testbench.v Line: 39
+# ** Warning: (vsim-3722) E:/verilog/NRFICE04/testbench.v(39): [TFMPC] - Missing connection for port 'spiState'.
+# ** Warning: (vsim-3722) E:/verilog/NRFICE04/testbench.v(39): [TFMPC] - Missing connection for port 'spiBitCount'.
+# ** Warning: (vsim-3722) E:/verilog/NRFICE04/testbench.v(39): [TFMPC] - Missing connection for port 'readWordHighFour'.
+# ** Warning: (vsim-3722) E:/verilog/NRFICE04/testbench.v(39): [TFMPC] - Missing connection for port 'dbgledr'.
+# ** Warning: (vsim-3722) E:/verilog/NRFICE04/testbench.v(39): [TFMPC] - Missing connection for port 'dbgledg'.
+# ** Warning: (vsim-3722) E:/verilog/NRFICE04/testbench.v(39): [TFMPC] - Missing connection for port 'dbgledb'.
+# .main_pane.wave.interior.cs.body.pw.wf
+add wave -position insertpoint  \
+sim:/toptb/UUT/spiState \
+sim:/toptb/UUT/spiBitCount \
+sim:/toptb/UUT/readWordHighFour \
+sim:/toptb/UUT/stretchedClock \
+sim:/toptb/UUT/spiStateBits \
+sim:/toptb/UUT/spiReadMode \
+sim:/toptb/UUT/pwm_counter \
+sim:/toptb/UUT/count_out \
+sim:/toptb/UUT/ramCLK \
+sim:/toptb/UUT/ramCLKEn \
+sim:/toptb/UUT/ramWriteEn \
+sim:/toptb/UUT/ramWriteData \
+sim:/toptb/UUT/ramAddr \
+sim:/toptb/UUT/ramReadData
+add wave -position insertpoint  \
+sim:/toptb/UUT/spi/ramReadData \
+sim:/toptb/UUT/spi/miso \
+sim:/toptb/UUT/spi/ramAddr \
+sim:/toptb/UUT/spi/ramCLK \
+sim:/toptb/UUT/spi/ramCLKEn \
+sim:/toptb/UUT/spi/ramWriteData \
+sim:/toptb/UUT/spi/ramWriteEn \
+sim:/toptb/UUT/spi/readModeOut \
+sim:/toptb/UUT/spi/bitCount \
+sim:/toptb/UUT/spi/readMode \
+sim:/toptb/UUT/spi/readWord \
+sim:/toptb/UUT/spi/spiInWord
+restart
+# Closing VCD file "e:/verilog/NRFICE04/testbench.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UUT'.  Expected 13, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /toptb/UUT File: E:/verilog/NRFICE04/testbench.v Line: 39
+# ** Warning: (vsim-3722) E:/verilog/NRFICE04/testbench.v(39): [TFMPC] - Missing connection for port 'spiState'.
+# ** Warning: (vsim-3722) E:/verilog/NRFICE04/testbench.v(39): [TFMPC] - Missing connection for port 'spiBitCount'.
+# ** Warning: (vsim-3722) E:/verilog/NRFICE04/testbench.v(39): [TFMPC] - Missing connection for port 'readWordHighFour'.
+# ** Warning: (vsim-3722) E:/verilog/NRFICE04/testbench.v(39): [TFMPC] - Missing connection for port 'dbgledr'.
+# ** Warning: (vsim-3722) E:/verilog/NRFICE04/testbench.v(39): [TFMPC] - Missing connection for port 'dbgledg'.
+# ** Warning: (vsim-3722) E:/verilog/NRFICE04/testbench.v(39): [TFMPC] - Missing connection for port 'dbgledb'.
+run
+# End time: 13:32:52 on Feb 09,2023, Elapsed time: 2:25:56
+# Errors: 0, Warnings: 8

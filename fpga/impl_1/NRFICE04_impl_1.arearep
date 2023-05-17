@@ -1,0 +1,88 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  150 of 5280 (2.841%)
+I/O cells:      20
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1          100.0
+                               CCU2         5          100.0
+                            FD1P3XZ       150          100.0
+                                 IB         5          100.0
+                               LUT4       345          100.0
+                                 OB        15          100.0
+SUB MODULES
+                            ebr8x16         1
+ebr8x16_ipgen_lscc_ram_dq(FAMILY="iCE40UP",ADDR_DEPTH=256,ADDR_WIDTH=8,DATA_WIDTH=16,INIT_FILE_FORMAT="hex",BYTE_SIZE=8,BYTE_WIDTH=2,MEM_SIZE="16,256",MEM_ID="ebr8x16")         1
+ebr8x16_ipgen_lscc_ram_dq_core(FAMILY="iCE40UP",DATA_WIDTH=32'b010000,ADDR_WIDTH=32'b01000,OUTREG="reg",GSR="",POSx=32'b0,POSy=32'b0,SINGLE_EBR=1'b1,MEM_SIZE="16,256",MEM_ID="ebr8x16")         1
+ebr8x16_ipgen_lscc_ram_dq_inst(FAMILY="iCE40UP",ADDR_DEPTH=256,ADDR_WIDTH=8,DATA_WIDTH=16,INIT_FILE_FORMAT="hex",BYTE_SIZE=8,BYTE_WIDTH=2,MEM_SIZE="16,256",MEM_ID="ebr8x16")         1
+ebr8x16_ipgen_lscc_ram_dq_main(FAMILY="iCE40UP",ADDR_DEPTH=256,ADDR_WIDTH=8,DATA_WIDTH=16,INIT_FILE_FORMAT="hex",BYTE_SIZE=8,BYTE_WIDTH=2,MEM_SIZE="16,256",MEM_ID="ebr8x16")         1
+                                spi         1
+                              TOTAL       527
+----------------------------------------------------------------------
+Report for cell spi.v1
+Instance Path : spi
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         5          100.0
+                            FD1P3XZ       134           89.3
+                               LUT4       195           56.5
+                              TOTAL       334
+----------------------------------------------------------------------
+Report for cell ebr8x16.v1
+Instance Path : ebr
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1          100.0
+                            FD1P3XZ        16           10.7
+                               LUT4         1            0.3
+SUB MODULES
+ebr8x16_ipgen_lscc_ram_dq(FAMILY="iCE40UP",ADDR_DEPTH=256,ADDR_WIDTH=8,DATA_WIDTH=16,INIT_FILE_FORMAT="hex",BYTE_SIZE=8,BYTE_WIDTH=2,MEM_SIZE="16,256",MEM_ID="ebr8x16")         1
+ebr8x16_ipgen_lscc_ram_dq_core(FAMILY="iCE40UP",DATA_WIDTH=32'b010000,ADDR_WIDTH=32'b01000,OUTREG="reg",GSR="",POSx=32'b0,POSy=32'b0,SINGLE_EBR=1'b1,MEM_SIZE="16,256",MEM_ID="ebr8x16")         1
+ebr8x16_ipgen_lscc_ram_dq_inst(FAMILY="iCE40UP",ADDR_DEPTH=256,ADDR_WIDTH=8,DATA_WIDTH=16,INIT_FILE_FORMAT="hex",BYTE_SIZE=8,BYTE_WIDTH=2,MEM_SIZE="16,256",MEM_ID="ebr8x16")         1
+ebr8x16_ipgen_lscc_ram_dq_main(FAMILY="iCE40UP",ADDR_DEPTH=256,ADDR_WIDTH=8,DATA_WIDTH=16,INIT_FILE_FORMAT="hex",BYTE_SIZE=8,BYTE_WIDTH=2,MEM_SIZE="16,256",MEM_ID="ebr8x16")         1
+                              TOTAL        22
+----------------------------------------------------------------------
+Report for cell ebr8x16_ipgen_lscc_ram_dq(FAMILY="iCE40UP",ADDR_DEPTH=256,ADDR_WIDTH=8,DATA_WIDTH=16,INIT_FILE_FORMAT="hex",BYTE_SIZE=8,BYTE_WIDTH=2,MEM_SIZE="16,256",MEM_ID="ebr8x16").v1
+Instance Path : ebr.lscc_ram_dq_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1          100.0
+                            FD1P3XZ        16           10.7
+                               LUT4         1            0.3
+SUB MODULES
+ebr8x16_ipgen_lscc_ram_dq_core(FAMILY="iCE40UP",DATA_WIDTH=32'b010000,ADDR_WIDTH=32'b01000,OUTREG="reg",GSR="",POSx=32'b0,POSy=32'b0,SINGLE_EBR=1'b1,MEM_SIZE="16,256",MEM_ID="ebr8x16")         1
+ebr8x16_ipgen_lscc_ram_dq_inst(FAMILY="iCE40UP",ADDR_DEPTH=256,ADDR_WIDTH=8,DATA_WIDTH=16,INIT_FILE_FORMAT="hex",BYTE_SIZE=8,BYTE_WIDTH=2,MEM_SIZE="16,256",MEM_ID="ebr8x16")         1
+ebr8x16_ipgen_lscc_ram_dq_main(FAMILY="iCE40UP",ADDR_DEPTH=256,ADDR_WIDTH=8,DATA_WIDTH=16,INIT_FILE_FORMAT="hex",BYTE_SIZE=8,BYTE_WIDTH=2,MEM_SIZE="16,256",MEM_ID="ebr8x16")         1
+                              TOTAL        21
+----------------------------------------------------------------------
+Report for cell ebr8x16_ipgen_lscc_ram_dq_main(FAMILY="iCE40UP",ADDR_DEPTH=256,ADDR_WIDTH=8,DATA_WIDTH=16,INIT_FILE_FORMAT="hex",BYTE_SIZE=8,BYTE_WIDTH=2,MEM_SIZE="16,256",MEM_ID="ebr8x16").v1
+Instance Path : ebr.lscc_ram_dq_inst.mem_main
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1          100.0
+                            FD1P3XZ        16           10.7
+                               LUT4         1            0.3
+SUB MODULES
+ebr8x16_ipgen_lscc_ram_dq_core(FAMILY="iCE40UP",DATA_WIDTH=32'b010000,ADDR_WIDTH=32'b01000,OUTREG="reg",GSR="",POSx=32'b0,POSy=32'b0,SINGLE_EBR=1'b1,MEM_SIZE="16,256",MEM_ID="ebr8x16")         1
+ebr8x16_ipgen_lscc_ram_dq_inst(FAMILY="iCE40UP",ADDR_DEPTH=256,ADDR_WIDTH=8,DATA_WIDTH=16,INIT_FILE_FORMAT="hex",BYTE_SIZE=8,BYTE_WIDTH=2,MEM_SIZE="16,256",MEM_ID="ebr8x16")         1
+                              TOTAL        20
+----------------------------------------------------------------------
+Report for cell ebr8x16_ipgen_lscc_ram_dq_inst(FAMILY="iCE40UP",ADDR_DEPTH=256,ADDR_WIDTH=8,DATA_WIDTH=16,INIT_FILE_FORMAT="hex",BYTE_SIZE=8,BYTE_WIDTH=2,MEM_SIZE="16,256",MEM_ID="ebr8x16").v1
+Instance Path : ebr.lscc_ram_dq_inst.mem_main.inst0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1          100.0
+                            FD1P3XZ        16           10.7
+                               LUT4         1            0.3
+SUB MODULES
+ebr8x16_ipgen_lscc_ram_dq_core(FAMILY="iCE40UP",DATA_WIDTH=32'b010000,ADDR_WIDTH=32'b01000,OUTREG="reg",GSR="",POSx=32'b0,POSy=32'b0,SINGLE_EBR=1'b1,MEM_SIZE="16,256",MEM_ID="ebr8x16")         1
+                              TOTAL        19
+----------------------------------------------------------------------
+Report for cell ebr8x16_ipgen_lscc_ram_dq_core(FAMILY="iCE40UP",DATA_WIDTH=32'b010000,ADDR_WIDTH=32'b01000,OUTREG="reg",GSR="",POSx=32'b0,POSy=32'b0,SINGLE_EBR=1'b1,MEM_SIZE="16,256",MEM_ID="ebr8x16").v1
+Instance Path : ebr.lscc_ram_dq_inst.mem_main.inst0.PRIM_MODE.xADDR[0].xDATA[0].no_mem_file.mem0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1          100.0
+                            FD1P3XZ        16           10.7
+                               LUT4         1            0.3
+                              TOTAL        18

@@ -1,0 +1,24 @@
+digraph "clockstretch" {
+/* Set options */
+graph [ rankdir=TB ];
+node [ fontsize=12  shape=box ];
+edge [ fontsize=12  ];
+
+
+
+/*       State Definitions       */
+
+s0 [label="0\n[Counting]\n\nclockCount <= clockCount + 1'b1\n"];
+s1 [label="1\nInterim\n\n"];
+s2 [label="2\nReset\n\nclockCount <= 8'b0\nclockOutReg <= ~clockOutReg\n"];
+
+
+
+/*       State Transitions       */
+
+s0 -> s1[label = "clockCount == 8'hf"];
+s0 -> s0[label = "clock"];
+s1 -> s2[label = "clock"];
+s2 -> s0[label = "clock"];
+
+}

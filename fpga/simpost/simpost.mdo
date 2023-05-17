@@ -1,0 +1,19 @@
+if {![file exists "E:/verilog/NRFICE04/simpost/simpost.mpf"]} { 
+	project new "E:/verilog/NRFICE04/simpost" simpost
+	project addfile "E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo" verilog
+	project addfile "E:/verilog/NRFICE04/testbench.v" verilog
+	project addfile "" none
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+
+	vlog  +incdir+"E:/verilog/NRFICE04/impl_1" -work work  "E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.vo"
+	vlog  +incdir+"E:/verilog/NRFICE04" -work work  "E:/verilog/NRFICE04/testbench.v"
+} else {
+	project open "E:/verilog/NRFICE04/simpost/simpost"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -lib work -L pmi_work -L ovi_ice40up  +transport_path_delays +transport_int_delays toptb -sdfmax /toptb/UUT=E:/verilog/NRFICE04/impl_1/NRFICE04_impl_1_vo.sdf 
+view wave
+add wave /*
+run 1 ms

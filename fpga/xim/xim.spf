@@ -1,0 +1,12 @@
+<RadiantSimulationProject stage="0" path="." simType="ModelSim" language="1" name="xim" version="2.0">
+    <Source path="pwm.v" langstandard="Verilog 2001" type="VERILOG" worklib="work" include="none"/>
+    <Source path="spi.v" langstandard="Verilog 2001" type="VERILOG" worklib="work" include="none"/>
+    <Source path="ebr8x16/rtl/ebr8x16.v" langstandard="" type="VERILOG" worklib="work" include="none"/>
+    <Source path="top.v" langstandard="Verilog 2001" type="VERILOG" worklib="work" include="none"/>
+    <Source path="testbench.v" langstandard="Verilog 2001" type="VERILOG" worklib="work" include="none"/>
+    <SimLib value="pmi_work ovi_ice40up"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <Udo value=""/>
+    <TopModule instance="" language="VERILOG" name="toptb"/>
+</RadiantSimulationProject>

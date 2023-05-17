@@ -1,0 +1,97 @@
+<HTML>
+<HEAD>
+<TITLE>Timing Report</TITLE>
+<link href="file:///E:/lscc/radiant/2022.1/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///E:/lscc/radiant/2022.1/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+tapath {
+  display: none;
+}
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" class="Child" onclick="hideTocList()"><PRE>
+<A name="Timing_rpt_top">Timing Report</A><B><U><big></big></U></B>
+Lattice Timing Report -  Setup , Version Radiant Software (64-bit) 2022.1.0.52.3
+
+Fri Mar  3 10:21:17 2023
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
+
+Command line:    timing -iotime -html -rpt NRFICE04_impl_1.ior NRFICE04_impl_1.udb -gui
+
+-----------------------------------------
+Design:          top
+Family:          iCE40UP
+Device:          iCE40UP5K
+Package:         SG48
+Performance:     High-Performance_1.2V
+Package Status:                     Preliminary    Version 1.5
+**Performance Hardware Data Status :   Advanced Version 1.0
+-----------------------------------------
+
+I/O Timing Report
+=================
+
+Performance Grade Translation Table
+------------------------------
+ Code  |  Performance Grade   
+------------------------------
+HP_1.2V| High-Performance_1.2V
+------------------------------
+
+FPGA Input Port Results for Performance Grade: HP_1.2V
+----------------------------------------------------------
+-----------------------------------------------------
+Port Name|Setup|Grade|Edge|Hold|Grade|edge|Clock Port
+-----------------------------------------------------
+-----------------------------------------------------
+***Warning: IO ports are not constrained.
+---------------------------------------------------------------------------------------------------------
+
+FPGA Output Port Results for Performance Grade: HP_1.2V
+----------------------------------------------------------
+--------------------------------------------------------------------------------
+Port Name|Clock To Out (MAX)|Grade|Edge|Clock To Out (MIN)|Grade|edge|Clock Port
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+***Warning: IO ports are not constrained.
+---------------------------------------------------------------------------------------------------------
+
+

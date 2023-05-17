@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="iCE40UP" date="2023 02 05 13:29:57" device="iCE40UP5K" generator="ipgen" library="module" module="ram_dq" name="ebr8x16" package="SG48" source_format="Verilog" speed="High-Performance_1.2V" vendor="latticesemi.com" version="2.1.0">
+ <Package>
+  <File modified="2023 02 05 13:29:57" name="rtl/ebr8x16_bb.v" type="black_box_verilog"/>
+  <File modified="2023 02 05 13:29:57" name="ebr8x16.cfg" type="cfg"/>
+  <File modified="2023 02 05 13:29:57" name="misc/ebr8x16_tmpl.v" type="template_verilog"/>
+  <File modified="2023 02 05 13:29:57" name="misc/ebr8x16_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2023 02 05 13:29:57" name="rtl/ebr8x16.v" type="top_level_verilog"/>
+  <File modified="2023 02 05 13:29:57" name="constraints/ebr8x16.ldc" type="timing_constraints"/>
+  <File modified="2023 02 05 13:29:57" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2023 02 05 13:29:57" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2023 02 05 13:29:57" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2023 02 05 13:29:57" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2022 07 27 09:33:24" name="testbench/tb_top.v" type="testbench_verilog"/>
+ </Package>
+</RadiantModule>

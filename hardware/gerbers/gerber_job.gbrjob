@@ -1,7 +1,7 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2022-07-14T19:01:57Z",
+        "CreationDate": "2024-04-30T16:03:56Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
@@ -13,9 +13,9 @@
         "BoardThickness": 1.99,
         "LayerNumber": 4,
         "Name": {
-            "ProjectId": "fpgadev13"
+            "ProjectId": "nrfice07"
         },
-        "Owner": "  <>",
+        "Owner": "jay jay <jay@hurleyresearch.com>",
         "Size": {
             "X": 68.58,
             "Y": 53.34

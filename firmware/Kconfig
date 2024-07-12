@@ -4,9 +4,6 @@
 # SPDX-License-Identifier: LicenseRef-Nordic-5-Clause
 #
 
-config USB_DEVICE_PID
-	default USB_PID_CDC_ACM_SAMPLE
-
 source "Kconfig.zephyr"
 
 menu "Nordic UART BLE GATT service sample"
@@ -32,9 +29,9 @@ config BT_NUS_SECURITY_ENABLED
 
 config BT_NUS_UART_RX_WAIT_TIME
 	int "Timeout for UART RX complete event"
-	default 50
+	default 50000
 	help
-	  Wait for RX complete event time in milliseconds
+	  Wait for RX complete event time in microseconds
 
 config BT_NUS_UART_ASYNC_ADAPTER
 	bool "Enable UART async adapter"

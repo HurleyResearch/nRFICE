@@ -1,12 +1,35 @@
+/*
+MIT License
+
+Copyright (c) 2024 Hurley Research LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+ */
+
 #ifndef UTILS
 #define UTILS
 #include <stdint.h>
-
 //#include "skibtools.h"
 #include "nrf5340_application.h"
 #include "nrf5340_application_bitfields.h"
 
-
+#define COMMSPACKETSIZE 128
 
 #define IOINPUT 0
 #define IOOUTPUT 1
@@ -47,15 +70,12 @@ uint8_t randomUInt8(uint8_t lessThan);
 void pack16(uint16_t val,uint8_t * array, uint32_t index );
 
 float unpackFloat( uint8_t source[], uint32_t loc );
+void setupSeggerUART(void);
 
-/*
-uint32_t clocks(void);
+void lgv(char msg[], uint8_t val);
+void lg(char msg[]);
 
-uint32_t milliseconds(void);
 
-void delayUs(uint32_t d);
-
-void delayMs(uint32_t d);*/
 
 uint32_t randomUInt32(void);
 /////////////////////////////////// gpio
@@ -71,17 +91,9 @@ void gpioConfigOutputSet(uint32_t pn);
 
 void gpioConfigInputNoPull(uint32_t pn);
 
-//void gpioConfigInputPullUp(uint32_t pn);
 
-//void gpioConfigInputPullDown(uint32_t pn);
 uint8_t gpioPinRead(uint32_t pn);
 void gpioConfigInputDisconnect(uint32_t pn);
-//void gpioConfigInputNoPullS0D1(uint32_t pn);
-
-//void gpioConfigInputPullUpS0D1(uint32_t pn);
-//void gpioConfigOutputSetH0H1(uint32_t pn);
-//void gpioConfigOutputSetH0H1DedicatedPeripheral(uint32_t pn);
-//void gpioConfigOutputSetH0H1AppMCU(uint32_t pn);
 
 void gpioConfigGeneral(uint8_t pn,uint8_t io, uint8_t inputConnect, uint8_t pull, uint8_t drive, uint8_t sense, uint8_t mcusel);
 
@@ -101,10 +113,10 @@ void gpioConfigInputPullDown(uint32_t pn);
 #define	ARD_D13SCK	8
 #define	ARD_D18SDA	35
 #define	ARD_D19SCL	34
-#define	ARD_D2	24
-#define	ARD_D3	21
-#define	ARD_D4	31
-#define	ARD_D5	0
+// #define	ARD_D2	24
+#define	ARD_D3	31
+#define	ARD_D4	21
+#define	ARD_D5	24
 #define	ARD_D8	38
 #define	ARD_D9	33
 #define	ICE_CRESETB	40
@@ -118,7 +130,7 @@ void gpioConfigInputPullDown(uint32_t pn);
 #define	NRFICE10	42
 #define	NRF_BTN	41
 #define	NRFICE2	2
-#define	NRFICE3	1
+//#define	NRFICE3	1
 #define	NRFICE4	47
 #define	NRFICE5	32
 #define	NRFICE6	46
@@ -133,23 +145,32 @@ void gpioConfigInputPullDown(uint32_t pn);
 #define	NRF_AIN5	26
 #define	NRF_AIN6	27
 #define	NRF_AIN7	28
-#define	NRF_CTS	39
+
 #define	NRF_LEDB	19
 #define	NRF_LEDG	36
 #define	NRF_LEDR	37
-#define	NRF_RTS	30
-#define	NRF_RXD	22
+
 #define	NRF_SPIDCN	11
-#define	NRF_TXD	29
+
 #define	UARTRX	20
 #define	UARTTX	23
 
-#define ICEAPP_SPICSN  ARD_D8
-#define ICEAPP_SPICLK  ARD_D10SS
-#define ICEAPP_SPIMOSI  ARD_D12MISO
-#define ICEAPP_SPIMISO  ARD_D13SCK
 
 
-#define ICESOFTRESET  NRFICE4
+#define	NRF_RTS	39
+#define	NRF_CTS	30
+#define	NRF_RXD	29
+#define	NRF_TXD	22
+
+
+
+
+#define ICEAPP_SPICSN  ARD_D8       // 38
+#define ICEAPP_SPICLK  ARD_D10SS    //  9
+#define ICEAPP_SPIMOSI  ARD_D12MISO // 12
+#define ICEAPP_SPIMISO  ARD_D13SCK  //  8
+
+
+#define ICESOFTRESET  NRFICE4       // 47
 
 #endif // UTILS

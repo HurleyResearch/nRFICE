@@ -82,12 +82,12 @@
         app:layout_constraintTop_toBottomOf="@+id/readVerifyFlashButton" />
 
     <Button
-        android:id="@+id/ramTestButton"
+        android:id="@+id/writeFlashTestButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RamTest"
+        android:onClick="writeFlashTestButton"
 
-        android:onClick="ramTestButton"
+        android:text="WriteTest"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/resetIceButton" />
 
@@ -105,14 +105,14 @@
         app:layout_constraintTop_toBottomOf="@+id/addProjectButton" />
 
     <Button
-        android:id="@+id/longTestButton"
+        android:id="@+id/readFlashTestButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="longTestButton"
+        android:onClick="readFlashTestButton"
 
-        android:text="long test"
+        android:text="ReadTest"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ramTestButton"
+        app:layout_constraintStart_toEndOf="@+id/writeFlashTestButton"
         app:layout_constraintTop_toBottomOf="@+id/softResetICEButton" />
 
     <EditText
@@ -125,6 +125,46 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ramTestButton" />
+        app:layout_constraintTop_toBottomOf="@+id/writeFlashTestButton" />
+
+    <Button
+        android:id="@+id/eraseFlashButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EraseFlash"
+        android:onClick="eraseFlashButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ramDataText" />
+
+    <Button
+        android:id="@+id/flashStatusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FlashStatus"
+        android:onClick="flashStatusButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eraseFlashButton"
+        app:layout_constraintTop_toBottomOf="@+id/ramDataText" />
+
+    <Button
+        android:id="@+id/eraseZeroButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="eraseZeroButton"
+
+        android:text="erasezero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eraseFlashButton" />
+
+    <Button
+        android:id="@+id/btsendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:onClick="btSendButton"
+
+        android:text="btwsend"
+        app:layout_constraintStart_toEndOf="@+id/eraseZeroButton"
+        app:layout_constraintTop_toBottomOf="@+id/flashStatusButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

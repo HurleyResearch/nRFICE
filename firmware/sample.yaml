@@ -4,11 +4,10 @@ sample:
 tests:
   sample.bluetooth.peripheral_uart:
     build_only: true
-    platform_allow: nrf51dk_nrf51422 nrf52dk_nrf52832 nrf52833dk_nrf52833 nrf52840dk_nrf52840
+    platform_allow: nrf52dk_nrf52832 nrf52833dk_nrf52833 nrf52840dk_nrf52840
       nrf5340dk_nrf5340_cpuapp nrf5340dk_nrf5340_cpuapp_ns thingy53_nrf5340_cpuapp
       thingy53_nrf5340_cpuapp_ns nrf21540dk_nrf52840
     integration_platforms:
-      - nrf51dk_nrf51422
       - nrf52dk_nrf52832
       - nrf52833dk_nrf52833
       - nrf52840dk_nrf52840
@@ -18,6 +17,16 @@ tests:
       - thingy53_nrf5340_cpuapp_ns
       - nrf21540dk_nrf52840
     tags: bluetooth ci_build
+  sample.bluetooth.peripheral_uart.sysbuild:
+    build_only: true
+    sysbuild: true
+    platform_allow: nrf52840dk_nrf52840 nrf5340dk_nrf5340_cpuapp
+      nrf5340dk_nrf5340_cpuapp_ns
+    integration_platforms:
+      - nrf52840dk_nrf52840
+      - nrf5340dk_nrf5340_cpuapp
+      - nrf5340dk_nrf5340_cpuapp_ns
+    tags: bluetooth ci_build sysbuild
   sample.bluetooth.peripheral_uart_cdc:
     build_only: true
     extra_args: OVERLAY_CONFIG=prj_cdc.conf DTC_OVERLAY_FILE="usb.overlay"
@@ -43,3 +52,13 @@ tests:
       - nrf5340dk_nrf5340_cpuapp
     platform_allow: nrf5340dk_nrf5340_cpuapp
     tags: bluetooth ci_build
+  sample.bluetooth.peripheral_uart.security_disabled:
+    build_only: true
+    platform_allow: nrf52dk_nrf52832 nrf52833dk_nrf52833 nrf52840dk_nrf52840
+      nrf5340dk_nrf5340_cpuapp nrf5340dk_nrf5340_cpuapp_ns thingy53_nrf5340_cpuapp
+      thingy53_nrf5340_cpuapp_ns nrf21540dk_nrf52840
+    integration_platforms:
+      - nrf52840dk_nrf52840
+    tags: bluetooth ci_build
+    extra_configs:
+      - CONFIG_BT_NUS_SECURITY_ENABLED=n

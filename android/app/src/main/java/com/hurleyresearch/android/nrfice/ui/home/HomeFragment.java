@@ -1,3 +1,27 @@
+/*
+MIT License
+
+Copyright (c) 2024 Hurley Research LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+ */
+
 package com.hurleyresearch.android.nrfice.ui.home;
 
 import android.app.Activity;
@@ -73,7 +97,7 @@ public class HomeFragment extends Fragment implements AdapterView.OnItemSelected
         this.logTextView.setText(sb.toString());
 
 
-        String[] fuckyou = new String[]{"NRFICE04","NRFICE01","NRFICE02","NRFICETesting","VSMTest"};
+        String[] fuckyou = new String[]{"NRFICE05","NRFICE04","NRFICE01","NRFICE02","NRFICETesting","VSMTest"};
         ArrayAdapter<String> adapter = new ArrayAdapter(  this.getActivity(),  android.R.layout.simple_spinner_item,fuckyou);
         this.projectSpinner = view.findViewById(R.id.spinner2);
         this.projectSpinner.setAdapter(adapter);
@@ -120,6 +144,7 @@ public class HomeFragment extends Fragment implements AdapterView.OnItemSelected
 
     public void appendStatus(String line) {
         this.statusLines.add(line);
+       // this.ramDataText.setText("" + System.currentTimeMillis());
         if (this.logTextView != null) {
             StringBuilder sb = new StringBuilder();
             if( statusLines.size() >= 3){
@@ -167,21 +192,65 @@ public void eraseFlash() throws Exception {
         }
 
     }
-    public void   ramTestButton(View view){
+    public void writeFlashTestButton(View view){
         Log.log("ramTestButton in HomeFragment");
         try {
-            BLE.instance().ramTest(Integer.parseInt(this.ramDataText.getText().toString()));
-
+       //    BLE.instance().ramTest(Integer.parseInt(this.ramDataText.getText().toString()));
+            BLE.instance().oneByteCommand(BLE.COMMAND_TESTWRITEFLASH);
+Log.log("aftger one byte command BLE.COMMAND_TESTWRITEFLASH which is " + BLE.COMMAND_TESTWRITEFLASH);
         } catch (Exception e) {
             e.printStackTrace();
         }
 
     }
 
-    public void  longTestButton(View view){
+    public void   btSendButton(View view){
+        Log.log("btSendButton in HomeFragment");
+        try {
+            //    BLE.instance().ramTest(Integer.parseInt(this.ramDataText.getText().toString()));
+            BLE.instance().oneByteCommand(BLE.COMMAND_TESTBTSEND);
+            //   Log.log("aftger one byte command BLE.COMMAND_TESTWRITEFLASH which is " + BLE.COMMAND_TESTWRITEFLASH);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    public void   eraseZeroButton(View view){
+
+        Log.log("eraseZeroButton");
+        try {
+            //    BLE.instance().ramTest(Integer.parseInt(this.ramDataText.getText().toString()));
+            BLE.instance().oneByteCommand(BLE.COMMAND_ERASEZERO);
+            Log.log("aftger one byte command BLE.COMMAND_TESTWRITEFLASH which is " + BLE.COMMAND_TESTWRITEFLASH);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+    public void  readFlashTestButton(View view){
         Log.log("ramTestButton in HomeFragment");
         try {
-            BLE.instance().oneByteCommand(BLE.COMMAND_RAMTEST_LONG);
+        //    BLE.instance().readFlash(0,0,32);
+            BLE.instance().oneByteCommand(BLE.COMMAND_TESTREADFLASH);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+    public void   eraseFlashButton(View view){
+        Log.log("eraseFlashButton in HomeFragment");
+        try {
+            BLE.instance().eraseFlash(1024,10);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+    public void   flashStatusButton(View view){
+        Log.log("flashStatusButton in HomeFragment");
+        try {
+            BLE.instance().readFlashStatus();
         } catch (Exception e) {
             e.printStackTrace();
         }

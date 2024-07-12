@@ -1,3 +1,27 @@
+/*
+MIT License
+
+Copyright (c) 2024 Hurley Research LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+ */
+
 package com.hurleyresearch.android.nrfice;
 
 import android.bluetooth.BluetoothAdapter;
@@ -33,6 +57,9 @@ public class BLE implements Runnable {
     public static int COMMAND_CRESETBLOW = 117;
     public static int COMMAND_CRESETBHIGH = 118;
     public static int COMMAND_TESTREADFLASH = 119;
+    public static int COMMAND_TESTWRITEFLASH = 127;
+    public static int COMMAND_ERASEZERO = 131;
+    public static int COMMAND_TESTBTSEND = 132;
 
 
     public static int COMMAND_READ_FLASH_SERIAL = 120;
@@ -293,7 +320,7 @@ public class BLE implements Runnable {
 
 
                         descriptor.setValue(BluetoothGattDescriptor.ENABLE_NOTIFICATION_VALUE);
-                        descriptor.setValue(BluetoothGattDescriptor.ENABLE_INDICATION_VALUE);
+                    //jkh who knowsmaybethisisfuckingup    descriptor.setValue(BluetoothGattDescriptor.ENABLE_INDICATION_VALUE);
 
 
                         boolean backFromWriteDescriptor = gatt.writeDescriptor(descriptor);
@@ -355,8 +382,8 @@ public class BLE implements Runnable {
 
         @Override
         public void onCharacteristicChanged(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic) {
-            //  Log.log("BLUETOOTH: mGattCallback, onCharacteristicChanged, characteristic: " + characteristic.toString());
-
+            Log.log("BLUETOOTH********: mGattCallback, onCharacteristicChanged, characteristic: " + characteristic.toString());
+//jkh never gets called wtf
             byte[] val = characteristic.getValue();
             if (val[0] == COMMAND_READ_FLASH_BT) {
                 // this is a read flash response
@@ -389,7 +416,7 @@ public class BLE implements Runnable {
             // broadcastUpdate(ACTION_DATA_AVAILABLE, characteristic);
         }
     };
-
+public static int nuscount = 0;
 
     private ScanCallback scanCallback =
             new ScanCallback() {
@@ -405,14 +432,24 @@ public class BLE implements Runnable {
                 }
 
                 public void onScanResult(int callbackType, ScanResult result) {
-                    Log.log("BLUETOOTH: onScanResult, callbackType: " + callbackType + ", result: " + result);
+                   // Log.log("BLUETOOTH: onScanResult, callbackType: " + callbackType + ", result: " + result);
                     BluetoothDevice device = result.getDevice();
-                    Log.log("BLUETOOTH: Device Name: " + device.getName() + "\t Address: " + device.getAddress());
+                    if( device.getName() != null ){
+                        if( device.getName().contains("Nordic")){
+//Log.log("NUS: " + nuscount);
+nuscount ++;
+                        }
+                    }
+                  //  Log.log("BLUETOOTH: Device Name: " + device.getName() + "\t Address: " + device.getAddress());
 //                    if (device.getName() != null && device.getName().equals("RBP001") && MainActivity.instance().androidId.equals(MainActivity.instance().androidId)) {
 //                    if (device.getName() != null && device.getName().equals("RBP001")) { //jdp
 //                    if (device.getName() != null && device.getName().equals("RBP002")) {
 //                    if (device.getName() != null && device.getName().equals("RBP003")) {
-                    if (device.getName() != null && device.getName().equals(DEVICE_NAME)) {
+                    String deviceName = device.getName();
+                    if( deviceName != null ){
+                        Log.log("devicename: " + deviceName);
+                    }
+                    if (deviceName != null && deviceName.equals(DEVICE_NAME)) {
 
                         Log.log("BLUETOOTH: onLeScan, FOUND DEVICE_NAME: " + device.getName() + ", rssi: " + result.getRssi());
                         mBluetoothLeScanner.stopScan(scanCallback);
